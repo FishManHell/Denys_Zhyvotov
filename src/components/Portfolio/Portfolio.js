@@ -2,7 +2,7 @@ import React from 'react';
 import {
     BlockSite,
     InformTextPortfolio, LinkForSite, MainBlockForSite,
-    SectionPortfolio, ThemeForBlock,
+    SectionPortfolio,
     TitleTextPortfolio
 } from "../../styled_components/Portfolio/Portfolio_styles";
 import {Container} from "../../styled_components/Universal_styles";
@@ -19,12 +19,6 @@ const Portfolio = () => {
                 </InformTextPortfolio>
 
                 <MainBlockForSite>
-                    <BlockSite>
-                        <LinkForSite href={'#'} target={'_blank'}>{Search}</LinkForSite>
-                    </BlockSite>
-                    <BlockSite>
-                        <LinkForSite href={'#'} target={'_blank'}>{Search}</LinkForSite>
-                    </BlockSite>
                     <BlockSite>
                         <LinkForSite href={'#'} target={'_blank'}>{Search}</LinkForSite>
                     </BlockSite>

@@ -10,7 +10,7 @@ const Heading = () => {
     return (
         <WrapperHeading>
             <BlockHeadingText>
-                <HeadingText>Web developer</HeadingText>
+                <HeadingText>Front-End Developer</HeadingText>
             </BlockHeadingText>
             <BlockHeadingButton>
                 <ButtonHeading>learn more</ButtonHeading>

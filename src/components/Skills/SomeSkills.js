@@ -7,7 +7,6 @@ import {arrayObjSkills} from "../../utils/skillsArrayObj";
 
 const SomeSkills = () => {
 
-
     const countingPercent = (percent, setPercent, maxWidth, setWidth) => {
         let id = setInterval(frame, 10)
         let width = 0

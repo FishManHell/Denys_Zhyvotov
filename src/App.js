@@ -8,6 +8,8 @@ import Skills from "./components/Skills/Skills";
 import Resume from "./components/Resume/Resume";
 import EducExp from "./components/EducExp/EducExp";
 import Portfolio from "./components/Portfolio/Portfolio";
+import ContactComponent from "./components/Contact/ContactComponent";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
@@ -20,6 +22,8 @@ function App() {
             <Resume/>
             <EducExp/>
             <Portfolio/>
+            <ContactComponent/>
+            <Footer/>
         </WrapperApp>
     );
 }
