@@ -6,7 +6,7 @@ import Experience from "./Experience/Experience";
 
 const EducExp = () => {
     return (
-        <SectionEducExp>
+        <SectionEducExp name={'edu&exp'}>
             <Container>
                 <WrapperEducExp>
                     <Education/>

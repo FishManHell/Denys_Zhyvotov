@@ -15,34 +15,33 @@ export const WrapperInfoSkills = styled.div`
 
 
 export const WrapperInfAboutSkills = styled.div`
-
-`
-
-export const TitleText = styled.h2`
-  font-size: 1.875rem;
-  line-height: 1.5rem;
-  font-weight: bold;
-  color: #4E6366;
-  text-transform: uppercase;
-  margin-bottom: 50px;
+  a {
+    display: flex;
+    width: 185px;
+    height: 60px;
+    border: 3px solid #00CD6B;
+    &:hover {
+      border: 3px solid #282828;
+      background-color: #00CD6B;
+      transition: all linear 0.4s;
+      span {
+        color: #282828;
+      }
+    }
+  }
 `
 
 export const SomeTextAboutSkills = styled.p`
   margin-bottom: 50px;
   font-size: 1.125rem;
   line-height: 1.875rem;
+  color: #929292;
+  font-weight: 400;
 `
 
-export const BlockButtonContMe = styled.div`
-  width: 185px;
-  height: 60px;
-  border: 3px solid #00CD6B;
-`
-
-export const ButtonContMe = styled.button`
+export const TextLinkContactMe = styled.span`
   cursor: pointer;
   text-transform: uppercase;
-  background: transparent;
   border: none;
   width: 100%;
   height: 100%;
@@ -50,6 +49,9 @@ export const ButtonContMe = styled.button`
   font-weight: bold;
   font-size: 1.125rem;
   line-height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 `
 
@@ -63,14 +65,19 @@ export const BlockItemSkills = styled.div`
 
 `
 
-export const TitleTextSkill = styled.h2`
+export const TitleTextSkill = styled.h3`
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+  color: #4E6366;
+  font-weight: 700;
 `
 
 export const Skill = styled.div`
   position: relative;
   width: ${props => props.width};
-  height: 40px;
+  height: 30px;
   background-color: #F2F2F1;
   margin-bottom: 40px;
 `
@@ -94,5 +101,5 @@ export const PercentBackgroundSkills = styled.span`
   color: #fff;
   line-height: 1.875rem;
   font-size: 1.125rem;
-  font-weight: bold;
+  font-weight: 700;
 `

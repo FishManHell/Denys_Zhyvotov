@@ -3,14 +3,15 @@ import {
     BlockItem, Description,
     InformText, MainBlockForItemEduc,
     SectionGeneralInfo, TimeWhenStudy, TitleItem,
-    TitleTextEducExp, WrapperExperience,
+    WrapperExperience,
     WrapperForInfItemEduc, Years
 } from "../../../styled_components/Education/Education_styles";
+import {TitleText} from "../../../styled_components/Universal_styles";
 
 const Experience = () => {
     return (
         <WrapperExperience>
-            <TitleTextEducExp>My Experience</TitleTextEducExp>
+            <TitleText margin_bottom={'50px'}>My Experience</TitleText>
             <WrapperForInfItemEduc>
                 <SectionGeneralInfo>
                     <InformText>

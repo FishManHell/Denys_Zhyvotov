@@ -13,19 +13,35 @@ export const NavigationBlock = styled.nav`
 
 
 export const Logo = styled.div`
-  color: white;
+  width: 70px;
+  border: 1px solid #00C667;
+  padding: 5px;
+  border-radius: 10px;
 `
 
+export const Image = styled.img`
+  width: 100%;
+  height: 100%;
+`
 
 export const List = styled.ul`
   display: flex;
   list-style: none;
+  text-transform: uppercase;
+  line-height: 1.875rem;
+  cursor: pointer;
+
+  a {
+    margin-right: 50px;
+    color: #fff;
+    font-weight: 600;
+
+    &:hover {
+      color: #00C667;
+    }
+  }
 `
 
 export const ItemNav = styled.li`
-  text-transform: uppercase;
-  line-height: 1.875rem;
-  margin-right: 40px;
-  color: #fff;
-  cursor: pointer;
+
 `

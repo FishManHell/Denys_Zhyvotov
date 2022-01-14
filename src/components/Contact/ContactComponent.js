@@ -5,7 +5,7 @@ import InformationContact from "./InformationContact";
 
 const ContactComponent = () => {
     return (
-        <SectionContact>
+        <SectionContact name={'contact me'}>
             <Container>
                 <InformationContact/>
             </Container>

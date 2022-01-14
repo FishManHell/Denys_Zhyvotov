@@ -8,7 +8,7 @@ import {
 
 const Heading = () => {
     return (
-        <WrapperHeading>
+        <WrapperHeading name={'home'}>
             <BlockHeadingText>
                 <HeadingText>Front-End Developer</HeadingText>
             </BlockHeadingText>

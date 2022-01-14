@@ -3,14 +3,14 @@ import {
     BlockItem, Description,
     InformText, MainBlockForItemEduc,
     SectionGeneralInfo, TimeWhenStudy, TitleItem,
-    TitleTextEducExp,
     WrapperEducation, WrapperForInfItemEduc, Years
 } from "../../../styled_components/Education/Education_styles";
+import {TitleText} from "../../../styled_components/Universal_styles";
 
 const Education = () => {
     return (
         <WrapperEducation>
-            <TitleTextEducExp>My Education</TitleTextEducExp>
+            <TitleText margin_bottom={'50px'}>My Education</TitleText>
             <WrapperForInfItemEduc>
                 <SectionGeneralInfo>
                     <InformText>

@@ -1,15 +1,15 @@
 import React from 'react';
 import {
-    MiniBlockAboutMe, MiniItem,
+    MiniBlockAboutMe,
     SubtitleText,
-    TitleText,
     WrapperInformation
 } from "../../styled_components/AbouteMe/Aboute_styles";
+import {TitleText} from "../../styled_components/Universal_styles";
 
 const Information = () => {
     return (
         <WrapperInformation>
-            <TitleText>About Me</TitleText>
+            <TitleText margin_bottom={'50px'}>About Me</TitleText>
             <SubtitleText>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto minus qui ut veniam
                 voluptatum! Architecto fugit ratione sapiente tempore. Ducimus.

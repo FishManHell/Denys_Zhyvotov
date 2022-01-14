@@ -12,29 +12,25 @@ export const WrapperResume = styled.div`
   flex-direction: column;
 `
 
-export const TitleText = styled.h2`
-  margin-bottom: 50px;
-  font-size: 1.5rem;
-  line-height: 1.125rem;
-
-`
-
 export const InfAboutResume = styled.p`
   font-size: 1.125rem;
   line-height: 1.5rem;
   margin-bottom: 50px;
-
+  font-weight: 400;
+  color: #929292;
 `
-
 
 export const BlockButtonResume = styled.div`
   width: 216px;
   height: 55px;
   border: 3px solid #00CF74;
-  
   &:hover {
-    transform: scale(1.2);
-    transition: 0.3s linear;
+    border: 3px solid #282828;
+    background-color: #00CD6B;
+    transition: all linear 0.4s;
+    a {
+      color: #282828;
+    }
   }
 `
 

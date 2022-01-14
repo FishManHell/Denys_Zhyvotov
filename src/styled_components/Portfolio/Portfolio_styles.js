@@ -6,15 +6,13 @@ export const SectionPortfolio = styled.section`
   padding: 100px 0;
 `
 
-export const TitleTextPortfolio = styled.h2`
-  margin-bottom: 50px;
-  text-align: center;
-`
-
-
 export const InformTextPortfolio = styled.p`
   margin-bottom: 100px;
   text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #929292;
 `
 
 export const MainBlockForSite = styled.div`
@@ -26,12 +24,18 @@ export const MainBlockForSite = styled.div`
 
 export const BlockSite = styled.div`
   position: relative;
+  display: flex;
+  justify-content: center;
   border-radius: 20px;
   margin-right: 40px;
   margin-bottom: 40px;
   width: 360px;
   height: 300px;
   border: 1px solid;
+  background: url(${props => props.background});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   
   :hover {
     :before {
@@ -45,7 +49,7 @@ export const BlockSite = styled.div`
     }
     border: none;
     a {
-      position: relative;
+      position: absolute;
       display: flex;
       width: 100%;
       height: 100%;
@@ -53,8 +57,18 @@ export const BlockSite = styled.div`
       align-items: center;
       z-index: 1;
       font-size: 2.5rem;
+      color: #fff;
     }
   }
+`
+
+export const TextForSite = styled.span`
+  padding-top: 20px;
+  color: #282828;
+  font-size: 2rem;
+  line-height: 1.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
 `
 
 export const LinkForSite = styled.a`

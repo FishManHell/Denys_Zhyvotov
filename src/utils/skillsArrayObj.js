@@ -5,7 +5,7 @@ export const arrayObjSkills = [
     },
     {
         name: 'Html/Css',
-        percent: 80,
+        percent: 90,
     },
     {
         name: 'JavaScript',
@@ -17,6 +17,6 @@ export const arrayObjSkills = [
     },
     {
         name: 'Ps/Figma',
-        percent: 65,
+        percent: 80,
     },
 ]

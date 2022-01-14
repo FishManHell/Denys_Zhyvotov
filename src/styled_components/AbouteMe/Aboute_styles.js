@@ -23,25 +23,14 @@ export const WrapperInformation = styled.div`
   margin: 0 auto;
 `
 
-
-export const TitleText = styled.h2`
-  font-size: 1.875rem;
-  line-height: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 50px;
-
-`
-
 export const SubtitleText = styled.p`
   padding-bottom: 50px;
   font-size: 1.125rem;
   line-height: 1.875rem;
+  color: #929292;
+  font-weight: 400;
 `
 
 export const MiniBlockAboutMe = styled.div`
-
-`
-
-export const MiniItem = styled.div`
 
 `

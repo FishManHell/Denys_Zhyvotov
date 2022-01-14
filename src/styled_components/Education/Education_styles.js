@@ -14,15 +14,6 @@ export const WrapperEducExp = styled.div`
   flex-direction: column;
 `
 
-
-export const TitleTextEducExp = styled.h2`
-  text-align: left;
-  font-size: 1.5rem;
-  line-height: 1.25rem;
-  text-transform: uppercase;
-  font-weight: bold;
-`
-
 /// Education
 
 export const WrapperEducation = styled.div`
@@ -35,9 +26,7 @@ export const WrapperEducation = styled.div`
 export const WrapperForInfItemEduc = styled.div`
   display: flex;
   margin-top: 50px;
-  //align-items: center;
   justify-content: space-between;
-
 `
 
 export const SectionGeneralInfo = styled.div`
@@ -48,6 +37,8 @@ export const InformText = styled.p`
   margin-bottom: 50px;
   font-size: 1.125rem;
   line-height: 1.5rem;
+  font-weight: 400;
+  color: #929292;
 `
 
 
@@ -55,23 +46,31 @@ export const MainBlockForItemEduc = styled.div`
   width: 50%;
 `
 
-
 export const BlockItem = styled.div`
   border-radius: 10px;
-  background-color: #F2F2F1;
+  background-color: #D7E2F2;
   margin-bottom: 20px;
   padding: 15px;
+  border: 2px solid #00CD6B;
+  &:hover {
+    cursor: pointer;
+    transition: all linear 0.3s;
+    transform: scale(1.03);
+  }
 `
 
 export const TitleItem = styled.h3`
   font-size: 1.375rem;
   line-height: 1.5rem;
   margin-bottom: 25px;
+  font-weight: 700;
+  color: #4E6366;
 `
 export const TimeWhenStudy = styled.p`
   font-size: 1.125rem;
   margin-bottom: 20px;
-
+  font-weight: 500;
+  color: #929292;
 `
 
 export const Years = styled.span`
@@ -82,15 +81,19 @@ export const Years = styled.span`
   height: 27px;
   background-color: #00CD6B;
   color: #fff;
-
+  font-size: 0.875rem;
+  line-height: 1.875rem;
+  font-weight: 700;
 `
 
 export const Description = styled.p`
-  border-top: 1px solid;
+  border-top: 2px solid #000;
   padding-top: 35px;
   margin-top: 30px;
   font-size: 1.125rem;
   line-height: 1.5rem;
+  font-weight: 400;
+  color: #929292;
 
 `
 
