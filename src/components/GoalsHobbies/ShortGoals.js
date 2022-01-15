@@ -2,18 +2,18 @@ import React from 'react';
 import {SimpleTextVGN, WrapperItemVGN} from "../../styled_components/VGH/VGH_styles";
 import {TitleText} from "../../styled_components/Universal_styles";
 
-const Values = () => {
+const ShortGoals = () => {
     return (
         <WrapperItemVGN>
             <TitleText margin_bottom={'50px'}>
-                Value
+                short term goals
             </TitleText>
             <SimpleTextVGN>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dignissimos enim facilis maxime nihil,
-                recusandae suscipit temporibus ullam vitae voluptatibus!
+                My short term goal is to get a job in required company where
+                I can utilize my skills & improve my career path.
             </SimpleTextVGN>
         </WrapperItemVGN>
     );
 };
 
-export default Values;
+export default ShortGoals;

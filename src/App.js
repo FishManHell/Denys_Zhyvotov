@@ -2,7 +2,7 @@ import './App.css';
 import {WrapperApp} from "./styled_components/App_style";
 import Heading from "./components/Heading/Heading";
 import Navigation from "./components/Navigation/Navigation";
-import VGH from "./components/ValuesGoalsHobbies/VGH";
+import VGH from "./components/GoalsHobbies/VGH";
 import AboutMe from "./components/AbouteMe/AboutMe";
 import Skills from "./components/Skills/Skills";
 import Resume from "./components/Resume/Resume";

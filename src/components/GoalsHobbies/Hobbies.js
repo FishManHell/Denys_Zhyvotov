@@ -1,5 +1,5 @@
 import React from 'react';
-import {HeadingVGN, SimpleTextVGN, WrapperItemVGN} from "../../styled_components/VGH/VGH_styles";
+import {SimpleTextVGN, WrapperItemVGN} from "../../styled_components/VGH/VGH_styles";
 import {TitleText} from "../../styled_components/Universal_styles";
 
 const Hobbies = () => {
@@ -9,9 +9,10 @@ const Hobbies = () => {
                 Hobbies
             </TitleText>
             <SimpleTextVGN>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dignissimos enim facilis maxime nihil,
-                recusandae suscipit temporibus ullam vitae voluptatibus!
+                My short term goal is to get a job in required company where
+                I can utilize my skills & improve my career path.
             </SimpleTextVGN>
+        {/*    придумать hobie для себя */}
         </WrapperItemVGN>
     );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
-import Values from "./Values";
-import Goals from "./Goals";
+import ShortGoals from "./ShortGoals";
+import LongGoals from "./LongGoals";
 import Hobbies from "./Hobbies";
 import {SectionVGH, WrapperVGN} from "../../styled_components/VGH/VGH_styles";
 import {Container} from "../../styled_components/Universal_styles";
@@ -10,8 +10,8 @@ const VGH = () => {
         <SectionVGH>
             <Container>
                 <WrapperVGN>
-                    <Values/>
-                    <Goals/>
+                    <ShortGoals/>
+                    <LongGoals/>
                     <Hobbies/>
                 </WrapperVGN>
             </Container>

@@ -11,6 +11,7 @@ export const WrapperInfoSkills = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column-reverse;
 `
 
 
@@ -20,10 +21,12 @@ export const WrapperInfAboutSkills = styled.div`
     width: 185px;
     height: 60px;
     border: 3px solid #00CD6B;
+
     &:hover {
       border: 3px solid #282828;
       background-color: #00CD6B;
       transition: all linear 0.4s;
+
       span {
         color: #282828;
       }
@@ -57,12 +60,15 @@ export const TextLinkContactMe = styled.span`
 
 
 export const WrapperSomeSkills = styled.div`
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 `
 
 
 export const BlockItemSkills = styled.div`
-
+  margin-right: 20px;
 `
 
 export const TitleTextSkill = styled.h3`
@@ -77,9 +83,10 @@ export const TitleTextSkill = styled.h3`
 export const Skill = styled.div`
   position: relative;
   width: ${props => props.width};
-  height: 30px;
+  height: 150px;
   background-color: #F2F2F1;
   margin-bottom: 40px;
+  border-radius: 10px;
 `
 
 export const BackgroundSkills = styled.div`
@@ -95,6 +102,8 @@ export const BackgroundSkills = styled.div`
   justify-content: flex-end;
   align-items: center;
   padding-right: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 `
 
 export const PercentBackgroundSkills = styled.span`

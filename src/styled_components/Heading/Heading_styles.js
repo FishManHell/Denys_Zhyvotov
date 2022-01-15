@@ -1,16 +1,19 @@
 import styled from "styled-components";
-import them from '../../images/ItIsMe.png'
+import them from '../../images/499787.png'
 
 export const WrapperHeading = styled.section`
   width: 100%;
   max-width: 100%;
-  height: 90vh;
-  background-image: url(${them});
-  background-repeat: no-repeat;
-  -webkit-background-size: cover; // cover можно еще указать
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  padding: 100px 0;
+  background-color: #FDF5E6;
+  // height: 60vh;
+    // background-image: url(${them});
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // -webkit-background-size: cover; // cover можно еще указать
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -18,12 +21,12 @@ export const WrapperHeading = styled.section`
 `
 
 export const BlockHeadingText = styled.div`
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 `
 
 export const HeadingText = styled.h1`
-  color: #fff;
+  color: #000;
   font-size: 3.75rem;
 `
 
@@ -31,7 +34,7 @@ export const BlockHeadingButton = styled.div`
   margin-top: 50px;
   width: 160px;
   height: 40px;
-  border: 1px solid #fff;
+  border: 1px solid #000;
 `
 
 export const ButtonHeading = styled.button`
@@ -39,7 +42,7 @@ export const ButtonHeading = styled.button`
   background: transparent;
   width: 100%;
   height: 100%;
-  color: #fff;
+  color: #000;
   cursor: pointer;
   font-size: 1.125rem;
   line-height: 1.5rem;

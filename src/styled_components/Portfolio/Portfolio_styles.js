@@ -31,7 +31,7 @@ export const BlockSite = styled.div`
   margin-bottom: 40px;
   width: 360px;
   height: 300px;
-  border: 1px solid;
+  border: 3px solid;
   background: url(${props => props.background});
   background-position: center;
   background-repeat: no-repeat;
@@ -43,11 +43,10 @@ export const BlockSite = styled.div`
       position: absolute;
       width: 100%;
       height: 100%;
-      border-radius: 20px;
+      border-radius: 18px;
       background: #00A65E;
       opacity: 0.8;
     }
-    border: none;
     a {
       position: absolute;
       display: flex;
