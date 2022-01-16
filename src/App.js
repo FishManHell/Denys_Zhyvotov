@@ -10,11 +10,19 @@ import EducExp from "./components/EducExp/EducExp";
 import Portfolio from "./components/Portfolio/Portfolio";
 import ContactComponent from "./components/Contact/ContactComponent";
 import Footer from "./components/Footer/Footer";
+import {useState} from "react";
+import LearnMore from "./components/Heading/MoreInfromation/LearnMore";
 
 function App() {
+    const [open, setOpen] = useState(true);
+
+    const openMoreInformation = () => setOpen(true);
+
+    const closeMoreInformation = () => setOpen(false);
+
     return (
         <WrapperApp>
-            <Heading/>
+            <Heading openInform={openMoreInformation}/>
             <Navigation/>
             <VGH/>
             <AboutMe/>
@@ -24,6 +32,7 @@ function App() {
             <Portfolio/>
             <ContactComponent/>
             <Footer/>
+            <LearnMore open={open} closeInform={closeMoreInformation}/>
         </WrapperApp>
     );
 }

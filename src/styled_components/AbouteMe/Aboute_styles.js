@@ -7,33 +7,11 @@ export const SectionAboutMe = styled.section`
   align-items: center;
 `
 
-export const WrapperPhoto = styled.div`
-  width: 600px;
-`
-
-export const PhotoItem = styled.img`
-  width: 100%;
-`
-///PHOTO
-
-
 export const WrapperInformation = styled.div`
   text-align: center;
   width: 90%;
   padding: 100px 0;
   margin: 0 auto;
-`
-
-export const SubtitleText = styled.p`
-  padding-bottom: 50px;
-  font-size: 1.125rem;
-  line-height: 1.875rem;
-  color: #929292;
-  font-weight: 400;
-`
-
-export const MiniBlockAboutMe = styled.div`
-
 `
 
 export const MainBlockWithMiniBlock = styled.div`
@@ -67,6 +45,7 @@ export const Icon = styled.span`
 `
 
 export const InformationText = styled.p`
+  white-space: pre-line;
   margin-top: 20px;
   font-size: 1.1rem;
   font-weight: 500;

@@ -6,13 +6,13 @@ import {
     WrapperHeading
 } from "../../styled_components/Heading/Heading_styles";
 
-const Heading = () => {
+const Heading = ({openInform}) => {
     return (
         <WrapperHeading name={'home'}>
             <BlockHeadingText>
                 <HeadingText>Front-End Developer</HeadingText>
             </BlockHeadingText>
-            <BlockHeadingButton>
+            <BlockHeadingButton onClick={openInform}>
                 <ButtonHeading>learn more</ButtonHeading>
             </BlockHeadingButton>
         </WrapperHeading>

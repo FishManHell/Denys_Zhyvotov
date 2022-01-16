@@ -2,10 +2,9 @@ import React, {useEffect, useState} from 'react';
 import {
     BackgroundSkills,
     BlockItemSkills,
-    PercentBackgroundSkills, SectionSkills, Skill,
+    PercentBackgroundSkills, Skill,
     TitleTextSkill
 } from "../../styled_components/Skills/Skills_styles";
-import {HeaderMiniBlock, MiniBlockSkills, SectionMiniBlock} from "../../styled_components/Skills/SkillsTest";
 
 const SkillComponent = ({percent, name, countingPercent}) => {
     const maxWidth = 200
