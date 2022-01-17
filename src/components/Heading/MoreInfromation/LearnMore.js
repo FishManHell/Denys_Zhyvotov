@@ -5,17 +5,17 @@ import {
     BlockAdPhEm,
     BlockContact,
     BlockEducation,
-    BlockExperience, BlockExperienceInform,
-    BlockImage,
+    BlockExperience,
+    BlockImage, BlockInformExperience,
     BlockNamePosition,
-    BlockSkills, Experience, ExperienceBar,
+    BlockSkills, ElementInform,
     FullName,
-    IconTextLink, Information,
+    IconTextLink, ItemElementInform,
     ItemLink,
     LeftSection,
     LeftSkills,
     Line,
-    MainBlockSkills,
+    MainBlockSkills, MainTextBlock, MainTextInform,
     MiniBlockConnect,
     Photo,
     Position,
@@ -24,20 +24,38 @@ import {
     SimpleText, SkillBar,
     TitleBlock,
     TitleBlockSkills,
-    TitleIcon, TitleInform,
+    TitleIcon,
     TitleRightBlock,
-    TtitleText, WrapperForExperience,
+    TitleText, WrapperForExperience,
     WrapperForSkills,
     WrapperInformation,
     WrapperLearnMore
 } from "../../../styled_components/Heading/LearnMore";
 import MyPhoto from '../../../images/123.jpg'
 import {AddressCard, At, GitHub, LinKedin, PaperPlane, UserCircle, Users} from "../../../utils/Font Awesome/Solid";
+import ExperienceItem from "./ExperienceItem";
+import {experiences} from "../../../utils/ExperienceArray";
 
 const LearnMore = ({open, closeInform}) => {
-    // onClick={closeInform}
+
+    const countingPercent = (percent, setPercent, maxWidth, setWidth) => {
+        let id = setInterval(frame, 50)
+        let width = 0
+
+        function frame() {
+            if (width >= percent) {
+                clearInterval(id)
+            } else {
+                width++
+                setPercent(width)
+            }
+        }
+        setWidth((maxWidth * percent) / 100)
+        return width
+    }
+
     return (
-        <WrapperLearnMore visibility={open ? 'visible' : 'hidden'}>
+        <WrapperLearnMore visibility={open ? 'visible' : 'hidden'} onClick={closeInform}>
             <WrapperInformation>
                 <LeftSection>
                     <BlockImage>
@@ -51,7 +69,7 @@ const LearnMore = ({open, closeInform}) => {
                     <BlockAbouteMe>
                         <TitleBlock>
                             <TitleIcon>{UserCircle}</TitleIcon>
-                            <TtitleText>About</TtitleText>
+                            <TitleText>About</TitleText>
                         </TitleBlock>
                         <SimpleText>
                             Lorem ipsum dolor sit amet,
@@ -63,7 +81,7 @@ const LearnMore = ({open, closeInform}) => {
                     <BlockContact>
                         <TitleBlock>
                             <TitleIcon>{AddressCard}</TitleIcon>
-                            <TtitleText>Contact</TtitleText>
+                            <TitleText>Contact</TitleText>
                         </TitleBlock>
                         <BlockAdPhEm>
                             <AdPhEm>Address: Tel-Aviv</AdPhEm>
@@ -75,7 +93,7 @@ const LearnMore = ({open, closeInform}) => {
                     <BlockAbouteMe>
                         <TitleBlock>
                             <TitleIcon>{Users}</TitleIcon>
-                            <TtitleText>References</TtitleText>
+                            <TitleText>References</TitleText>
                         </TitleBlock>
                         <SimpleText>
                             Available upon request.
@@ -85,7 +103,7 @@ const LearnMore = ({open, closeInform}) => {
                     <BlockAbouteMe>
                         <TitleBlock>
                             <TitleIcon>{PaperPlane}</TitleIcon>
-                            <TtitleText>Interests</TtitleText>
+                            <TitleText>Interests</TitleText>
                         </TitleBlock>
                         <SimpleText>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -97,7 +115,7 @@ const LearnMore = ({open, closeInform}) => {
                     <BlockAbouteMe>
                         <TitleBlock>
                             <TitleIcon>{At}</TitleIcon>
-                            <TtitleText>Connect</TtitleText>
+                            <TitleText>Connect</TitleText>
                         </TitleBlock>
                         <MiniBlockConnect>
                             <ItemLink href={'#'}>
@@ -159,35 +177,35 @@ const LearnMore = ({open, closeInform}) => {
                     <BlockEducation>
                         <TitleRightBlock>Education</TitleRightBlock>
                         <WrapperForExperience>
-                            <Experience>
-                                <ExperienceBar data-percent={'100%'}/>
-                                <BlockExperienceInform>
-                                    <TitleInform>2016 <br/>General Education</TitleInform>
-                                    <Information>Dnipropetrovsk College</Information>
-                                </BlockExperienceInform>
-                            </Experience>
-                            <Experience>
-                                <ExperienceBar data-percent={'50%'}/>
-                                <BlockExperienceInform>
-                                    <TitleInform>2018 <br/>IT School (Hillel)</TitleInform>
-                                    <Information>Web developer</Information>
-                                </BlockExperienceInform>
-                            </Experience>
-                            <Experience>
-                                <ExperienceBar data-percent={'20%'}/>
-                                <BlockExperienceInform>
-                                    <TitleInform>2020 <br/>Tel-Ran</TitleInform>
-                                    <Information>Web developer</Information>
-                                </BlockExperienceInform>
-                            </Experience>
-
+                            {experiences.map(exp => <ExperienceItem key={exp.id} {...exp} countingPercent={countingPercent}/>)}
                         </WrapperForExperience>
-
                     </BlockEducation>
 
 
                     <BlockExperience>
                         <TitleRightBlock>Work Experience:</TitleRightBlock>
+                        <BlockInformExperience>
+                            <MainTextBlock>
+                                <MainTextInform>Frontend Developer</MainTextInform>
+                                <MainTextInform>2020 - Present</MainTextInform>
+                            </MainTextBlock>
+                            <ElementInform>
+                                <ItemElementInform>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</ItemElementInform>
+                                <ItemElementInform>Illo odit totam, quaerat numquam dolor, praesentium perferendis sunt magnam.</ItemElementInform>
+                                <ItemElementInform>consequuntur optio odio nam vitae, labore architecto magni et libero officiis culpa.</ItemElementInform>
+                            </ElementInform>
+                        </BlockInformExperience>
+                        <BlockInformExperience>
+                            <MainTextBlock>
+                                <MainTextInform>Frontend Web Developer</MainTextInform>
+                                <MainTextInform>2018 - 2019</MainTextInform>
+                            </MainTextBlock>
+                            <ElementInform>
+                                <ItemElementInform>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</ItemElementInform>
+                                <ItemElementInform>Illo odit totam, quaerat numquam dolor, praesentium perferendis sunt magnam.</ItemElementInform>
+                                <ItemElementInform>consequuntur optio odio nam vitae, labore architecto magni et libero officiis culpa.</ItemElementInform>
+                            </ElementInform>
+                        </BlockInformExperience>
                     </BlockExperience>
                 </RightSection>
             </WrapperInformation>

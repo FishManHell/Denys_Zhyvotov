@@ -58,54 +58,6 @@ export const TextLinkContactMe = styled.span`
 
 `
 
-
-export const WrapperSomeSkills = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-`
-
-
-export const BlockItemSkills = styled.div`
-  margin-right: 20px;
-`
-
-export const TitleTextSkill = styled.h3`
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-size: 1.375rem;
-  line-height: 1.5rem;
-  color: #4E6366;
-  font-weight: 700;
-`
-
-export const Skill = styled.div`
-  position: relative;
-  width: ${props => props.width};
-  height: 150px;
-  background-color: #F2F2F1;
-  margin-bottom: 40px;
-  border-radius: 10px;
-`
-
-export const BackgroundSkills = styled.div`
-  position: absolute;
-  width: ${props => props.width};
-  -webkit-transition: width .8s linear;
-  -o-transition: width .8s linear;
-  transition: 0.8s linear;
-  transition-delay: 0.3s;
-  background-color: #00CD6B;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 10px;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-`
-
 export const PercentBackgroundSkills = styled.span`
   color: #fff;
   line-height: 1.875rem;

@@ -14,7 +14,7 @@ import {useState} from "react";
 import LearnMore from "./components/Heading/MoreInfromation/LearnMore";
 
 function App() {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
 
     const openMoreInformation = () => setOpen(true);
 

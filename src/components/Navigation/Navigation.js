@@ -12,7 +12,7 @@ import {Link, Events} from "react-scroll";
 import logo from '../../images/bowtie.svg'
 
 const Navigation = () => {
-    const [nav,] = useState(['home', 'about me', 'skills', 'cv', 'edu&exp', 'portfolio', 'contact me'])
+    const [nav, ] = useState(['home', 'about me', 'skills', 'cv', 'edu&exp', 'portfolio', 'contact me'])
 
     useEffect(() => {
         Events.scrollEvent.register('begin', function () {
@@ -31,7 +31,7 @@ const Navigation = () => {
                         <Image src={logo}/>
                     </Logo>
                     <List>
-                        {nav.map(link => <Link to={link} spy={true} smooth={true} duration={1000}><ItemNav>{link}</ItemNav></Link>)}
+                        {nav.map(link => <Link key={link} to={link} spy={true} smooth={true} duration={1000}><ItemNav>{link}</ItemNav></Link>)}
                     </List>
                 </NavigationBlock>
             </Container>
