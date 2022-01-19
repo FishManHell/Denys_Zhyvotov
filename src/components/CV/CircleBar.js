@@ -1,24 +1,8 @@
 import React from 'react';
 import {CircularProgressbar} from "react-circular-progressbar";
-import {CircleItem} from "../../../styled_components/Heading/LearnMore";
+import {CircleItem} from "../../styled_components/Heading/LearnMore";
+import {CircleStyles} from "../../utils/ObjectsStyle";
 
-const Styles = {
-    path: {
-        transform: "rotate(180deg)",
-        transformOrigin: "center center",
-        strokeLinecap: "butt",
-        stroke: '#00dcc6',
-    },
-    trail: {
-        strokeWidth: 0
-    },
-    text: {
-        fontSize: '1rem',
-        fontWeight: 500,
-        animation: "fadein 2s",
-        fill: '#222',
-    }
-}
 
 const CircleBar = ({percent, size}) => {
 
@@ -29,7 +13,7 @@ const CircleBar = ({percent, size}) => {
                 value={percent}
                 percentage={percent}
                 text={`${percent}%`}
-                styles={{...Styles}}
+                styles={{...CircleStyles}}
             />
         </CircleItem>
     );

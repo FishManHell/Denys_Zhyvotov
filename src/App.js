@@ -11,14 +11,21 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import ContactComponent from "./components/Contact/ContactComponent";
 import Footer from "./components/Footer/Footer";
 import {useState} from "react";
-import LearnMore from "./components/Heading/MoreInfromation/LearnMore";
+import LearnMore from "./components/CV/LearnMore";
+import {hiddenScroll, visibleScroll} from "./utils/someFunctions";
 
 function App() {
     const [open, setOpen] = useState(false);
 
-    const openMoreInformation = () => setOpen(true);
+    const openMoreInformation = () => {
+        setOpen(true);
+        hiddenScroll()
+    }
 
-    const closeMoreInformation = () => setOpen(false);
+    const closeMoreInformation = () => {
+        setOpen(false);
+        visibleScroll()
+    }
 
     return (
         <WrapperApp>
@@ -28,7 +35,7 @@ function App() {
             <AboutMe/>
             <Skills/>
             <Resume/>
-            <EducExp/>
+            {/*<EducExp/>*/}
             <Portfolio/>
             <ContactComponent/>
             <Footer/>

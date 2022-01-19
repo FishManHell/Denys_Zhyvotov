@@ -1,41 +1,63 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
+import {device} from "../../utils/MediaSize";
 
 
-export const WrapperLearnMore = styled.div`
+export const BackgroundLM = styled.div`
   position: fixed;
-  visibility: ${props => props.visibility};
+  background-color: #000;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  visibility: hidden;
   top: 0;
   left: 0;
-  
-  &:before {
-    position: absolute;
-    content: '';
-    background-color: black;
-    top: 0;
-    left: 0;
-    opacity: 0.7;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
+  z-index: 1000;
+  opacity: 0;
+  transition: all 0.3s;
+  overflow: hidden auto !important;
+
+  ${props => props.visible && css`
+    opacity: 0.5;
+    visibility: visible;
+  `}
+
 `
 
 
 export const WrapperInformation = styled.main`
   position: fixed;
-  left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%;
   width: 1140px;
   max-width: 100%;
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgb(12 3 25 / 80%);
+  box-shadow: 0 0 10px rgb(229 9 105 / 100%);
   background-color: #fff;
-  z-index: 2;
+  transition: all 0.5s linear;
+  z-index: 2000;
+  opacity: 0;
+  transform: scale(0) translate(-50%, -50%) rotate(180deg);
+
+  ${props => props.visible && css`
+    transform: scale(1) translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  `} 
+  
+  @media all and ${device.laptop} {
+    width: 900px;
+    margin: 20px;
+  };
+
+  @media all and ${device.tablet} {
+    width: 800px;
+  }
+
+  @media all and ${device.tabletS} {
+    width: 700px;
+    flex-direction: column;
+  }
+
 `
 
 
@@ -56,6 +78,11 @@ export const BlockImage = styled.div`
   border-radius: 50%;
   width: 150px;
   margin: 0 auto 10px auto;
+
+  @media all and ${device.tabletS} {
+    width: 300px;
+  }
+
 `
 
 export const Photo = styled.img`
@@ -64,7 +91,6 @@ export const Photo = styled.img`
 `
 
 export const BlockNamePosition = styled.div`
-
 `
 
 export const FullName = styled.h3`
@@ -80,8 +106,11 @@ export const Position = styled.h4`
   font-size: 1.1rem;
 `
 
-export const BlockAbouteMe = styled.div`
+export const BlockAboutMe = styled.div`
 
+  @media all and ${device.tabletS} {
+    text-align: center;
+  }
 
 `
 
@@ -89,6 +118,9 @@ export const TitleBlock = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
+  @media all and ${device.tabletS} {
+    justify-content: center;
+  }
 `
 
 export const TitleIcon = styled.span`
@@ -116,6 +148,10 @@ export const Line = styled.hr`
   border: none;
   border-top: 1px solid rgba(0, 0, 0, .1);
   margin: 0.5rem 0 1rem 0;
+
+  @media all and ${device.tabletS} {
+    width: 100%;
+  }
 `
 
 
@@ -124,7 +160,9 @@ export const BlockContact = styled.div`
 `
 
 export const BlockAdPhEm = styled.div`
-
+  @media all and ${device.tabletS} {
+    text-align: center;
+  }
 `
 
 export const AdPhEm = styled.p`
@@ -168,18 +206,33 @@ export const MainBlockSkills = styled.div`
 
 export const WrapperForSkills = styled.div`
   display: flex;
+
+  @media all and ${device.tabletS} {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const RightSkills = styled.div`
   flex: 0 0 50%;
   max-width: 50%;
   padding-right: 15px;
+
+
+  @media all and ${device.tabletS} {
+    width: 100%;
+    max-width: 100%;
+  }
 `
 
 export const LeftSkills = styled.div`
   flex: 0 0 50%;
   max-width: 50%;
-  padding-right: 15px;
+
+  @media all and ${device.tabletS} {
+    width: 100%;
+    max-width: 100%;
+  }
 `
 
 export const BlockSkills = styled.div`
@@ -192,6 +245,12 @@ export const TitleBlockSkills = styled.h5`
   line-height: 1.5;
   color: #222;
   margin-bottom: 0.5rem;
+
+  @media all and ${device.tabletS} {
+    text-align: center;
+    font-weight: 500;
+  }
+  
 `
 
 export const SkillBar = styled.div`
@@ -253,21 +312,28 @@ export const ItemElementInform = styled.li`
 `
 
 
-
-
-
 /// это skill bar - тут нужно указать правильней все
 
 
-export const WrapperForExperience = styled.div`
+export const WrapperForEducation = styled.div`
   display: flex;
   justify-content: space-around;
+
+  @media all and ${device.tabletS} {
+    flex-direction: column;
+    justify-content: center;
+  }
 `
 
-export const Experience = styled.div`
+export const Education = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media all and ${device.tabletS} {
+    margin-bottom: 20px;
+  }
+
 `
 
 export const CircleItem = styled.div`
@@ -282,8 +348,18 @@ export const CircleItem = styled.div`
 
 `
 
-export const BlockExperienceInform = styled.div`
+export const BlockEducationInform = styled.div`
   text-align: center;
+
+  @media all and ${device.tablet} {
+    h5 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
 `
 
 export const TitleInform = styled.h5`
@@ -304,4 +380,9 @@ export const TitleRightBlock = styled.h2`
   font-weight: 600;
   line-height: 1.1;
   color: #c60076;
+
+  @media all and ${device.tabletS} {
+    text-align: center;
+  }
+
 `
