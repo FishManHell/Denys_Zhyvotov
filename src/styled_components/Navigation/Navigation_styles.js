@@ -7,7 +7,7 @@ export const WrapperNav = styled.section`
 
 export const NavigationBlock = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 `
 

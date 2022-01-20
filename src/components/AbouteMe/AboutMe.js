@@ -4,7 +4,7 @@ import {SectionAboutMe} from "../../styled_components/AbouteMe/Aboute_styles";
 
 const AboutMe = () => {
     return (
-        <SectionAboutMe name={'about me'}>
+        <SectionAboutMe>
             <Information/>
         </SectionAboutMe>
     );

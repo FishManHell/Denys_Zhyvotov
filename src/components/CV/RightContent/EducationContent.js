@@ -5,9 +5,9 @@ import {
     WrapperForEducation
 } from "../../../styled_components/Heading/LearnMore";
 import {experiences} from "../../../utils/ExperienceArray";
-import EducationItem from "../EducationItem";
+import EducationItem from "./EducationItem";
 
-const EducationContent = ({open}) => {
+const EducationContent = () => {
 
     const countingPercent = (percent, setPercent, maxWidth, setWidth) => {
         let id = setInterval(frame, 50)
@@ -21,7 +21,6 @@ const EducationContent = ({open}) => {
                 setPercent(width)
             }
         }
-
         setWidth((maxWidth * percent) / 100)
         return width
     }
@@ -31,9 +30,7 @@ const EducationContent = ({open}) => {
         <BlockEducation>
             <TitleRightBlock>Education</TitleRightBlock>
             <WrapperForEducation>
-                {experiences.map(exp =>
-                    <EducationItem key={exp.id} {...exp} countingPercent={countingPercent} open={open}/>
-                )}
+                {experiences.map(exp => <EducationItem key={exp.id} {...exp} countingPercent={countingPercent}/>)}
             </WrapperForEducation>
         </BlockEducation>
     );

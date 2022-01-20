@@ -1,37 +1,30 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {
-    Image,
     ItemNav,
     List,
-    Logo,
     NavigationBlock,
     WrapperNav
 } from "../../styled_components/Navigation/Navigation_styles";
 import {Container} from "../../styled_components/Universal_styles";
-import {Link, Events} from "react-scroll";
-import logo from '../../images/bowtie.svg'
+import {Link} from "react-router-dom";
+
+const objItemLink = [
+    {link: '/home', name: 'home'},
+    {link: '/vgn', name: 'vgn'},
+    // {link: '/skills', name: 'skills'},
+    {link: '/resume', name: 'resume'},
+    {link: '/sites', name: 'sites'},
+    {link: '/contact', name: 'contact'},
+]
 
 const Navigation = () => {
-    const [nav, ] = useState(['home', 'about me', 'skills', 'cv', 'edu&exp', 'portfolio', 'contact me'])
-
-    useEffect(() => {
-        Events.scrollEvent.register('begin', function () {
-        });
-
-        return Events.scrollEvent.register('end', function () {
-        });
-    }, [])
-
 
     return (
         <WrapperNav>
             <Container>
                 <NavigationBlock>
-                    <Logo>
-                        <Image src={logo}/>
-                    </Logo>
                     <List>
-                        {nav.map(link => <Link key={link} to={link} spy={true} smooth={true} duration={1000}><ItemNav>{link}</ItemNav></Link>)}
+                        {objItemLink.map(item => <Link key={item.name} to={item.link}><ItemNav>{item.name}</ItemNav></Link>)}
                     </List>
                 </NavigationBlock>
             </Container>

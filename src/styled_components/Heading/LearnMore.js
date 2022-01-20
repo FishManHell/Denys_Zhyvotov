@@ -1,32 +1,7 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 import {device} from "../../utils/MediaSize";
 
-
-export const BackgroundLM = styled.div`
-  position: fixed;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  opacity: 0;
-  transition: all 0.3s;
-  overflow: hidden auto !important;
-
-  ${props => props.visible && css`
-    opacity: 0.5;
-    visibility: visible;
-  `}
-
-`
-
-
 export const WrapperInformation = styled.main`
-  position: fixed;
-  top: 50%;
-  left: 50%;
   width: 1140px;
   max-width: 100%;
   display: flex;
@@ -34,15 +9,6 @@ export const WrapperInformation = styled.main`
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(229 9 105 / 100%);
   background-color: #fff;
-  transition: all 0.5s linear;
-  z-index: 2000;
-  opacity: 0;
-  transform: scale(0) translate(-50%, -50%) rotate(180deg);
-
-  ${props => props.visible && css`
-    transform: scale(1) translate(-50%, -50%) rotate(0deg);
-    opacity: 1;
-  `} 
   
   @media all and ${device.laptop} {
     width: 900px;

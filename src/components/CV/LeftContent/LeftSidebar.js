@@ -2,7 +2,6 @@ import React from 'react';
 import {
     AdPhEm,
     BlockAboutMe, BlockAdPhEm, BlockContact,
-    BlockImage,
     BlockNamePosition,
     FullName, IconTextLink, ItemLink,
     LeftSection, Line, MiniBlockConnect,

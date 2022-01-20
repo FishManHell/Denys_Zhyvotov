@@ -4,12 +4,12 @@ import SkillsContent from "./SkillsContent";
 import EducationContent from "./EducationContent";
 import ExperienceContent from "./ExperienceContent";
 
-const RightSidebar = ({open}) => {
+const RightSidebar = () => {
 
     return (
         <RightSection>
             <SkillsContent/>
-            <EducationContent open={open}/>
+            <EducationContent/>
             <ExperienceContent/>
         </RightSection>
     );

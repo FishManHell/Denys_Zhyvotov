@@ -1,25 +1,24 @@
-import React, {useEffect, useState} from 'react';
+import React, {useMemo, useState} from 'react';
 import {
     BlockEducationInform, Education,
     Information,
     TitleInform
-} from "../../styled_components/Heading/LearnMore";
+} from "../../../styled_components/Heading/LearnMore";
 import CircleBar from "./CircleBar";
 
-const EducationItem = ({text, title, percent, countingPercent, open}) => {
-    const [size,] = useState({width: '120px', height: '120px'})
+const stylesPortfolio = {width: '120px', height: '120px'};
+
+const EducationItem = ({text, title, percent, countingPercent}) => {
     const [width, setWidth] = useState(0);
     const [percentNew, setPercent] = useState(0);
 
-    useEffect(() => {
-        if (percentNew === 0 && open) {
-            countingPercent(percent, setPercent, size.width, setWidth)
-        }
-    }, [open])
+    useMemo(() => {
+        countingPercent(percent, setPercent, stylesPortfolio.width, setWidth)
+    }, [])
 
     return (
         <Education>
-            <CircleBar width={width} percent={percentNew} size={size}/>
+            <CircleBar width={width} percent={percentNew} size={stylesPortfolio}/>
             <BlockEducationInform>
                 <TitleInform>{title}</TitleInform>
                 <Information>{text}</Information>

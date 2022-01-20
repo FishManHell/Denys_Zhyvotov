@@ -3,14 +3,12 @@ import {
     BlockContact,
     BlockStreetInform, MyContact, MyStreetInfrom,
     TextInform, TitleContact,
-    TitleText,
     WrapperInformContact
 } from "../../styled_components/Contact/ContactComponentStyles";
 
 const InformationContact = () => {
     return (
         <WrapperInformContact>
-            <TitleText>Contact Me</TitleText>
             <TextInform>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga maiores minima nobis placeat reiciendis
                 vel vero! Consequatur itaque placeat quibusdam?

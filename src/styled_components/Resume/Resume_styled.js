@@ -24,6 +24,7 @@ export const BlockButtonResume = styled.div`
   width: 216px;
   height: 55px;
   border: 3px solid #00CF74;
+  margin-top: 30px;
   &:hover {
     border: 3px solid #282828;
     background-color: #00CD6B;

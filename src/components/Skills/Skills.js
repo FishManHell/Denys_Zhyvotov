@@ -5,7 +5,7 @@ import {Container} from "../../styled_components/Universal_styles";
 
 const Skills = () => {
     return (
-        <SectionSkills name={'skills'}>
+        <SectionSkills>
             <Container>
                 <WrapperInfoSkills>
                     <InformationAboutSkills/>

@@ -6,40 +6,26 @@ import VGH from "./components/GoalsHobbies/VGH";
 import AboutMe from "./components/AbouteMe/AboutMe";
 import Skills from "./components/Skills/Skills";
 import Resume from "./components/Resume/Resume";
-import EducExp from "./components/EducExp/EducExp";
 import Portfolio from "./components/Portfolio/Portfolio";
 import ContactComponent from "./components/Contact/ContactComponent";
 import Footer from "./components/Footer/Footer";
-import {useState} from "react";
-import LearnMore from "./components/CV/LearnMore";
-import {hiddenScroll, visibleScroll} from "./utils/someFunctions";
+import {Route, Switch} from "react-router-dom";
 
 function App() {
-    const [open, setOpen] = useState(false);
-
-    const openMoreInformation = () => {
-        setOpen(true);
-        hiddenScroll()
-    }
-
-    const closeMoreInformation = () => {
-        setOpen(false);
-        visibleScroll()
-    }
 
     return (
         <WrapperApp>
-            <Heading openInform={openMoreInformation}/>
+            <Heading/>
             <Navigation/>
-            <VGH/>
-            <AboutMe/>
-            <Skills/>
-            <Resume/>
-            {/*<EducExp/>*/}
-            <Portfolio/>
-            <ContactComponent/>
+            <Switch>
+                <Route exact path={['/', '/home']} component={AboutMe}/>
+                <Route exact path={'/vgn'} component={VGH}/>
+                {/*<Route exact path={'/skills'} component={Skills}/>*/}
+                <Route exact path={'/resume'} component={Resume}/>
+                <Route exact path={'/sites'} component={Portfolio}/>
+                <Route exact path={'/contact'} component={ContactComponent}/>
+            </Switch>
             <Footer/>
-            <LearnMore open={open} closeInform={closeMoreInformation}/>
         </WrapperApp>
     );
 }

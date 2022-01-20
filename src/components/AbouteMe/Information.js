@@ -4,7 +4,6 @@ import {
     MainBlockWithMiniBlock, MiniBlock,
     WrapperInformation
 } from "../../styled_components/AbouteMe/Aboute_styles";
-import {TitleText} from "../../styled_components/Universal_styles";
 import {Laptop, Shield, User, UserGraduate} from "../../utils/Font Awesome/Solid";
 
 const Information = () => {
@@ -28,8 +27,6 @@ const Information = () => {
             name: 'Laptop',
             icon: Laptop,
             text: "I know several programming \n languages and libraries."
-            // "(HTML, CSS, JavaScript, React, Redux, Redux-Toolkit, Formik, Axios)\n" +
-            //     "AND OTHER."
         },
         {
             name: 'Shield',
@@ -43,7 +40,6 @@ const Information = () => {
 
     return (
         <WrapperInformation>
-            <TitleText margin_bottom={'50px'}>About Me</TitleText>
             <MainBlockWithMiniBlock>
                 {miniBlock.map(block =>
                     <MiniBlock key={block.name}>
