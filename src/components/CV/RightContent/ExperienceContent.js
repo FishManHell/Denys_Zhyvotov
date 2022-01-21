@@ -1,6 +1,6 @@
 import React from 'react';
 import {BlockExperience, TitleRightBlock} from "../../../styled_components/Heading/LearnMore";
-import {experienceArray} from "../../../utils/skillsArrayObj";
+import {experienceArray} from "../../../utils/someArrayObj";
 import Experience from "./Experience";
 
 const ExperienceContent = () => {

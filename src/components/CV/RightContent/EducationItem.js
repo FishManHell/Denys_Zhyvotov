@@ -1,20 +1,15 @@
-import React, {useMemo, useState} from 'react';
+import React from 'react';
 import {
     BlockEducationInform, Education,
     Information,
     TitleInform
 } from "../../../styled_components/Heading/LearnMore";
 import CircleBar from "./CircleBar";
+import {stylesPortfolio} from "../../../utils/ObjectsStyle";
+import useHook from "../../../utils/CustomHook/useSkillBar";
 
-const stylesPortfolio = {width: '120px', height: '120px'};
-
-const EducationItem = ({text, title, percent, countingPercent}) => {
-    const [width, setWidth] = useState(0);
-    const [percentNew, setPercent] = useState(0);
-
-    useMemo(() => {
-        countingPercent(percent, setPercent, stylesPortfolio.width, setWidth)
-    }, [])
+const EducationItem = ({text, title, percent}) => {
+    const {width, percentNew} = useHook(percent);
 
     return (
         <Education>

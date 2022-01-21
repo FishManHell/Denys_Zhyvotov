@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const WrapperNav = styled.section`
   padding: 20px 0;
-  background-color: #1B2A2C;
+  background-color: #0E191B;
 `
 
 export const NavigationBlock = styled.nav`

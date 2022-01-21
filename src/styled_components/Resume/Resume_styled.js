@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const SectionResume = styled.section`
-  padding: 100px 0;
-  background-color: #F2F2F1;
+  //padding: 100px 0;
+  //background-color: #F2F2F1;
 `
 
 export const WrapperResume = styled.div`

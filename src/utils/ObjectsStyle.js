@@ -15,3 +15,5 @@ export const CircleStyles = {
         fill: '#222',
     }
 }
+
+export const stylesPortfolio = {width: '120px', height: '120px'};

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const SectionContact = styled.section`
-  padding: 100px 0;
-  background-color: #1B2A2C;
+  //padding: 100px 0;
+  //background-color: #1B2A2C;
 `
 
 

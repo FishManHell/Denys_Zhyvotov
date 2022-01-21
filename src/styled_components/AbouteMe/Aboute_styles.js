@@ -2,16 +2,13 @@ import styled from "styled-components";
 
 export const SectionAboutMe = styled.section`
   width: 100%;
-  background-color: #F2F2F1;
+  //background-color: #F2F2F1;
   display: flex;
   align-items: center;
 `
 
 export const WrapperInformation = styled.div`
   text-align: center;
-  width: 90%;
-  padding: 100px 0;
-  margin: 0 auto;
 `
 
 export const MainBlockWithMiniBlock = styled.div`

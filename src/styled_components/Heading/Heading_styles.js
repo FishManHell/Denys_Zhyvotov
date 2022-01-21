@@ -1,19 +1,10 @@
 import styled from "styled-components";
-import them from '../../images/499787.png'
 
 export const WrapperHeading = styled.section`
   width: 100%;
   max-width: 100%;
   padding: 100px 0;
-  background-color: #FDF5E6;
-  // height: 60vh;
-    // background-image: url(${them});
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // -webkit-background-size: cover; // cover можно еще указать
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
+  //background-color: #FDF5E6;
   display: flex;
   justify-content: center;
   flex-direction: column;

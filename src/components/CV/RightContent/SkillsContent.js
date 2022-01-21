@@ -6,7 +6,7 @@ import {
     TitleRightBlock,
     WrapperForSkills
 } from "../../../styled_components/Heading/LearnMore";
-import {leftSkillsArray, rightSkillsArray} from "../../../utils/skillsArrayObj";
+import {leftSkillsArray, rightSkillsArray} from "../../../utils/someArrayObj";
 import Skill from "./Skill";
 
 const SkillsContent = () => {

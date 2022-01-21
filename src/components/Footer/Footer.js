@@ -6,29 +6,19 @@ import {
     TextFooter,
     BlockLink, Link
 } from "../../styled_components/Footer/FooterStyles";
-import {Facebook, GitHub, LinKedin, Telegram, Twitter} from "../../utils/Font Awesome/Solid";
+import {arrayFooterLink} from "../../utils/someArrayObj";
 
 const Footer = () => {
     return (
         <FooterSection>
             <Container>
-                <TextFooter>Copyrigtht 2014 focal - Built With Passion</TextFooter>
+                <TextFooter>Copyright 2014 focal - Built With Passion</TextFooter>
                 <MainBlockWithLinkContact>
-                    <BlockLink>
-                        <Link href={'#'} target={'_blank'}>{Facebook}</Link>
-                    </BlockLink>
-                    <BlockLink>
-                        <Link href={'https://www.linkedin.com/in/denys-zhyvotov-8683611b9/'} target={'_blank'}>{LinKedin}</Link>
-                    </BlockLink>
-                    <BlockLink>
-                        <Link href={'#'} target={'_blank'}>{Twitter}</Link>
-                    </BlockLink>
-                    <BlockLink>
-                        <Link href={'https://t.me/FishManhell'} target={'_blank'}>{Telegram}</Link>
-                    </BlockLink>
-                    <BlockLink>
-                        <Link href={'https://github.com/FishManHell'} target={'_blank'}>{GitHub}</Link>
-                    </BlockLink>
+                    {arrayFooterLink.map(item =>
+                        <BlockLink key={item.name}>
+                            <Link href={item.link} target={'_blank'}>{item.icon}</Link>
+                        </BlockLink>
+                    )}
                 </MainBlockWithLinkContact>
             </Container>
         </FooterSection>

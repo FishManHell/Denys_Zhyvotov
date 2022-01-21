@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 80%;
+  width: 1920px;
+  max-width: 95%;
   margin: 0 auto;
 `
-
 
 export const TitleText = styled.h2`
   color: #4E6366;
