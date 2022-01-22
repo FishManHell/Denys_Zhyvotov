@@ -5,7 +5,6 @@ import {
     TitleInform
 } from "../../../styled_components/Heading/LearnMore";
 import CircleBar from "./CircleBar";
-import {stylesPortfolio} from "../../../utils/ObjectsStyle";
 import useHook from "../../../utils/CustomHook/useSkillBar";
 
 const EducationItem = ({text, title, percent}) => {
@@ -13,7 +12,7 @@ const EducationItem = ({text, title, percent}) => {
 
     return (
         <Education>
-            <CircleBar width={width} percent={percentNew} size={stylesPortfolio}/>
+            <CircleBar width={width} percent={percentNew}/>
             <BlockEducationInform>
                 <TitleInform>{title}</TitleInform>
                 <Information>{text}</Information>

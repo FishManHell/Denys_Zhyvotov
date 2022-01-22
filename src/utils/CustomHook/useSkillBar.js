@@ -7,7 +7,7 @@ export default function (percent) {
     const [percentNew, setPercent] = useState(0);
 
     const countingPercent = percent => {
-        let id = setInterval(frame, 50)
+        let id = setInterval(frame, 100)
         let width = 0
 
         function frame() {
