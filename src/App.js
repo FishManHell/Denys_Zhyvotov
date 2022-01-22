@@ -13,24 +13,19 @@ import Footer from "./components/Footer/Footer";
 function App() {
 
     return (
-        <Background>
-            <WrapperApp>
-                <Navigation/>
-                <Heading/>
-                <Switch>
-                    <Route exact path={['/', '/home']} component={AboutMe}/>
-                    <Route exact path={'/vgn'} component={VGH}/>
-                    <Route exact path={'/resume'} component={Resume}/>
-                    <Route exact path={'/sites'} component={Portfolio}/>
-                    <Route exact path={'/contact'} component={ContactComponent}/>
-                </Switch>
-                <Footer/>
-            </WrapperApp>
-        </Background>
+        <WrapperApp>
+            <Navigation/>
+            <Heading/>
+            <Switch>
+                <Route exact path={['/', '/home']} component={AboutMe}/>
+                <Route exact path={'/vgn'} component={VGH}/>
+                <Route exact path={'/resume'} component={Resume}/>
+                <Route exact path={'/sites'} component={Portfolio}/>
+                <Route exact path={'/contact'} component={ContactComponent}/>
+            </Switch>
+            <Footer/>
+        </WrapperApp>
     );
 }
 
 export default App;
-
-
-// сделать чтоб картинка была всегда на весь экран не зависемо от контента

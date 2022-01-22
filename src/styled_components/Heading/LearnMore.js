@@ -35,6 +35,11 @@ export const LeftSection = styled.section`
   padding: 2rem 1.5rem;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+
+  @media all and ${device.tabletS} {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
 `
 
 /// left Section
@@ -48,7 +53,6 @@ export const BlockImage = styled.div`
   @media all and ${device.tabletS} {
     width: 300px;
   }
-
 `
 
 export const Photo = styled.img`
@@ -57,6 +61,9 @@ export const Photo = styled.img`
 `
 
 export const BlockNamePosition = styled.div`
+  @media all and ${device.tabletS} {
+    text-align: center;
+  }
 `
 
 export const FullName = styled.h3`
@@ -161,8 +168,15 @@ export const IconTextLink = styled.span`
 
 
 export const RightSection = styled.section`
-  flex: 0 0 75%;
+  width: 75%;
+  max-width: 100%;
   padding: 2rem 1.5rem;
+
+  @media all and ${device.tablet} {
+    width: 100%;
+  }
+  
+  
 `
 
 export const MainBlockSkills = styled.div`
@@ -173,7 +187,7 @@ export const MainBlockSkills = styled.div`
 export const WrapperForSkills = styled.div`
   display: flex;
 
-  @media all and ${device.tabletS} {
+  @media all and ${device.tabletL} {
     flex-direction: column;
     align-items: center;
   }
@@ -185,7 +199,7 @@ export const RightSkills = styled.div`
   padding-right: 15px;
 
 
-  @media all and ${device.tabletS} {
+  @media all and ${device.tabletL} {
     width: 100%;
     max-width: 100%;
   }
@@ -195,7 +209,7 @@ export const LeftSkills = styled.div`
   flex: 0 0 50%;
   max-width: 50%;
 
-  @media all and ${device.tabletS} {
+  @media all and ${device.tabletL} {
     width: 100%;
     max-width: 100%;
   }
@@ -285,7 +299,7 @@ export const WrapperForEducation = styled.div`
   display: flex;
   justify-content: space-around;
 
-  @media all and ${device.tabletS} {
+  @media all and ${device.tabletL} {
     flex-direction: column;
     justify-content: center;
   }
@@ -296,7 +310,8 @@ export const Education = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media all and ${device.tabletS} {
+  @media all and ${device.tabletL} {
+    
     margin-bottom: 20px;
   }
 
@@ -311,7 +326,7 @@ export const CircleItem = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
 `
 
 export const BlockEducationInform = styled.div`
@@ -333,6 +348,7 @@ export const TitleInform = styled.h5`
   font-size: 1.20rem;
   font-weight: 500;
   line-height: 1.1;
+  white-space: pre-line;
 `
 
 export const Information = styled.p`

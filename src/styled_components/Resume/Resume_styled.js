@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const SectionResume = styled.section`
-  //padding: 100px 0;
-  //background-color: #F2F2F1;
+  padding: 0 0 100px 0;
 `
 
 export const WrapperResume = styled.div`
@@ -10,14 +9,6 @@ export const WrapperResume = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-`
-
-export const InfAboutResume = styled.p`
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  margin-bottom: 50px;
-  font-weight: 400;
-  color: #929292;
 `
 
 export const BlockButtonResume = styled.div`

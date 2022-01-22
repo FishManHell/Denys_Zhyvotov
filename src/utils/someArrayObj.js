@@ -1,4 +1,7 @@
 import {Facebook, GitHub, Laptop, LinKedin, Shield, Telegram, Twitter, User, UserGraduate} from "./Font Awesome/Solid";
+import first from "../images/weather_aplication.png";
+import second from "../images/hex_aplication.jpg";
+import third from "../images/math_aplication.jpg";
 
 export const rightSkillsArray = [
     {text: 'Communication', width: '70%'},
@@ -58,7 +61,7 @@ export const arrayInformItem = [
     {
         name: 'User',
         icon: User,
-        text: "Hi everyone! My name is Denys.\n" +
+        text: "Hi everyone!\n" +
             "I\'m front-end developer from Ukraine.\n Now I live in Israel.\n" +
             "I have a good work experience in front-end developing."
     },
@@ -106,4 +109,10 @@ export const experiences = [
         percent: 90
 
     }
+]
+
+export const arrayWebsitesObj = [
+    {name: 'weather', href: first,},
+    {name: 'hex_color', href: second,},
+    {name: 'hi_aducation', href: third,}
 ]

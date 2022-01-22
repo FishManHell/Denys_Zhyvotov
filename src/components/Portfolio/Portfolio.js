@@ -6,15 +6,9 @@ import {
 } from "../../styled_components/Portfolio/Portfolio_styles";
 import {Container} from "../../styled_components/Universal_styles";
 import {Search} from "../../utils/Font Awesome/Solid";
-import first from '../../images/weather_aplication.png'
-import second from '../../images/hex_aplication.jpg'
-import third from '../../images/math_aplication.jpg'
+import {arrayWebsitesObj} from "../../utils/someArrayObj";
 
-const arrayWebsitesObj = [
-    {name: 'weather', href: first,},
-    {name: 'hex_color', href: second,},
-    {name: 'hi_aducation', href: third,}
-]
+
 
 const Portfolio = () => {
 
