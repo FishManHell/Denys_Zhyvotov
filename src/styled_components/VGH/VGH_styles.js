@@ -32,16 +32,20 @@ export const WrapperItemVGN = styled.section`
   padding: 10px 20px;
   border-radius: 5px;
   box-shadow: 0 0 30px #A9A9A9;
-
-  @media all and ${device.laptopS} {
-   margin: 0 0 20px 0;
-  }
   
   &:hover {
     cursor: pointer;
     border: 5px solid #FF7400;
     transition: all 0.3s linear;
     transform: scale(1.1);
+  }
+
+  @media all and ${device.laptopS} {
+    margin: 0 0 20px 0;
+  }
+
+  @media all and ${device.mobile} {
+    width: 300px;
   }
 `
 

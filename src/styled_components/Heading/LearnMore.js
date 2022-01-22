@@ -41,7 +41,6 @@ export const LeftSection = styled.section`
     border-bottom-left-radius: 0;
   }
 `
-
 /// left Section
 
 
@@ -52,6 +51,10 @@ export const BlockImage = styled.div`
 
   @media all and ${device.tabletS} {
     width: 300px;
+  }
+
+  @media all and ${device.mobile} {
+    width: 200px;
   }
 `
 

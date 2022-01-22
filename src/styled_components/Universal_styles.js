@@ -27,6 +27,10 @@ export const TitleText = styled.h2`
     margin-bottom: 50px;
     line-height: 1.5rem;
   }
-  
+
+  @media all and ${device.mobile} {
+    font-size: 1.5rem;
+  }
   
 `
+
