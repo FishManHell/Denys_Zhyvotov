@@ -2,6 +2,7 @@ import React from 'react';
 import {CircularProgressbar} from "react-circular-progressbar";
 import {CircleItem} from "../../../styled_components/Heading/LearnMore";
 import {CircleStyles} from "../../../utils/ObjectsStyle";
+import 'react-circular-progressbar/dist/styles.css';
 
 
 const CircleBar = ({percent, size}) => {

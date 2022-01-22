@@ -4,8 +4,8 @@ import {
     TitleRightBlock,
     WrapperForEducation
 } from "../../../styled_components/Heading/LearnMore";
-import {experiences} from "../../../utils/ExperienceArray";
 import EducationItem from "./EducationItem";
+import {experiences} from "../../../utils/someArrayObj";
 
 const EducationContent = () => {
 
