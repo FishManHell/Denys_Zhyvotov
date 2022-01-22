@@ -26,9 +26,10 @@ const LeftSidebar = () => {
                     <TitleText>About</TitleText>
                 </TitleBlock>
                 <SimpleText>
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit.
-                    Obcaecati in blanditiis mollitia hic.
+                    Hi everyone! I'm 25 years old.
+                    I'm from Ukraine.
+                    Now I live in Israel.
+                    I have a good experience in front-end developing
                 </SimpleText>
                 <Line/>
             </BlockAboutMe>
@@ -38,9 +39,9 @@ const LeftSidebar = () => {
                     <TitleText>Contact</TitleText>
                 </TitleBlock>
                 <BlockAdPhEm>
-                    <AdPhEm>Address: Tel-Aviv</AdPhEm>
+                    <AdPhEm>Address: Tel-Aviv-Yafo</AdPhEm>
                     <AdPhEm>Phone: (053) 220-12-30</AdPhEm>
-                    <AdPhEm>Email: leonard66693@gmail.com</AdPhEm>
+                    <AdPhEm>Email: denyszhyvotov@gmail.com</AdPhEm>
                 </BlockAdPhEm>
                 <Line/>
             </BlockContact>
@@ -60,9 +61,9 @@ const LeftSidebar = () => {
                     <TitleText>Interests</TitleText>
                 </TitleBlock>
                 <SimpleText>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Repellat ad, quisquam.
-                    Ad amet itaque architecto quisquam blanditiis dolor ab, quae rem.
+                    I'm interested in sport
+                    I run, go to the gym, go to the movies and hang out with my friends.
+                    I love learning new technologies
                 </SimpleText>
                 <Line/>
             </BlockAboutMe>

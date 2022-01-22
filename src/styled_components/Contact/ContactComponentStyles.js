@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const SectionContact = styled.section`
-  padding: 100px 0;
+  padding: 0 0 100px 0;
 `
 //InformationContact
 
 export const WrapperInformContact = styled.div`
   text-align: center;
   font-size: 1.125rem;
-  color: #848585;
+  color: #000;
   font-weight: 600;
 `
 
@@ -46,6 +46,6 @@ export const TitleContact = styled.p`
 `
 
 export const MyContact = styled.span`
-  color: #848585;
+  color: #000;
   padding-top: 10px;
 `

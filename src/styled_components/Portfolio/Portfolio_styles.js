@@ -27,13 +27,13 @@ export const BlockSite = styled.div`
   border-radius: 20px;
   margin-right: 40px;
   margin-bottom: 40px;
-  width: 360px;
+  width: 400px;
   height: 300px;
-  border: 3px solid;
+  border: 5px solid #fff;
   background: url(${props => props.background});
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   
   :hover {
     :before {

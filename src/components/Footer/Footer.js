@@ -1,24 +1,16 @@
 import React from 'react';
 import {Container} from "../../styled_components/Universal_styles";
-import {
-    MainBlockWithLinkContact,
-    FooterSection,
-    TextFooter,
-    BlockLink, Link
-} from "../../styled_components/Footer/FooterStyles";
+import {MainBlockWithLinkContact, FooterSection, TextFooter} from "../../styled_components/Footer/FooterStyles";
 import {arrayFooterLink} from "../../utils/someArrayObj";
+import SocialLink from "./SocialLink";
 
 const Footer = () => {
     return (
         <FooterSection>
             <Container>
-                <TextFooter>Copyright 2014 focal - Built With Passion</TextFooter>
+                <TextFooter>links to social networks</TextFooter>
                 <MainBlockWithLinkContact>
-                    {arrayFooterLink.map(item =>
-                        <BlockLink key={item.name}>
-                            <Link href={item.link} target={'_blank'}>{item.icon}</Link>
-                        </BlockLink>
-                    )}
+                    {arrayFooterLink.map(item => <SocialLink key={item.name} {...item}/>)}
                 </MainBlockWithLinkContact>
             </Container>
         </FooterSection>

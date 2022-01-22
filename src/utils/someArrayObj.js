@@ -1,7 +1,7 @@
 import {Facebook, GitHub, Laptop, Linkedin, Shield, Telegram, Twitter, User, UserGraduate} from "./Font Awesome/Solid";
-import weather from "../images/weather.png";
-import hex from "../images/hex.jpg";
-import math from "../images/math.jpg";
+import weather from "../images/weather.PNG";
+import hex from "../images/hex_color.PNG";
+import math from "../images/hi_ducation.PNG";
 
 export const rightSkillsArray = [
     {text: 'Communication', width: '70%'},
@@ -113,6 +113,6 @@ export const experiences = [
 
 export const arrayWebsitesObj = [
     {name: 'weather', blank: '_blank', theme: weather, href: '#'},
-    {name: 'hex_color', blank: '_blank', theme: hex, href: '#'},
-    {name: 'hi_education', blank: '_blank', theme: math, href: '#'}
+    {name: 'hex_color', blank: '_blank', theme: hex, href: 'https://coloraplication.herokuapp.com/home'},
+    {name: 'hi_education', blank: '_blank', theme: math, href: 'https://himathgaming.herokuapp.com/'}
 ]

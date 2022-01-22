@@ -66,7 +66,7 @@ export const List = styled.ul`
 `
 
 export const ItemNav = styled.li`
-  width: 90px;
+  width: 100px;
   margin-right: 50px;
   border: 1px solid #fff;
   border-radius: 10px;

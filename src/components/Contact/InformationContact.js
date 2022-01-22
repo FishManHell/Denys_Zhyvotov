@@ -19,7 +19,7 @@ const InformationContact = () => {
                 <MyStreetInform>22 22 22</MyStreetInform>
             </BlockStreetInform>
             <BlockContact>
-                <TitleContact>Email: <MyContact>leonard66693@gmail.com</MyContact></TitleContact>
+                <TitleContact>Email: <MyContact>denyszhyvotov@gmail.com</MyContact></TitleContact>
                 <TitleContact>Phone: <MyContact>0532201230</MyContact></TitleContact>
             </BlockContact>
         </WrapperInformContact>

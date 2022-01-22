@@ -11,6 +11,7 @@ export const TextFooter = styled.p`
   text-align: center;
   color: #fff;
   margin-bottom: 20px;
+  text-transform: uppercase;
 `
 
 export const MainBlockWithLinkContact = styled.div`

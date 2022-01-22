@@ -5,7 +5,7 @@ import {Search} from "../../utils/Font Awesome/Solid";
 const WebSite = ({href, name, blank, theme}) => {
     return (
         <BlockSite background={theme}>
-            <TextForSite>{name}</TextForSite>
+            {/*<TextForSite>{name}</TextForSite>*/}
             <LinkForSite href={href} target={blank}>{Search}</LinkForSite>
         </BlockSite>
     );
