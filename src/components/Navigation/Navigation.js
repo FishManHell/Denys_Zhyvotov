@@ -7,17 +7,19 @@ import {
 import {Container} from "../../styled_components/Universal_styles";
 import {arrayItemLink} from "../../utils/someArrayObj";
 import ItemLink from "./ItemLink";
+import Burger from "./BurgerMenu/Burger";
 
 
 
-const Navigation = () => {
+const Navigation = ({burger, close, closeOpen}) => {
 
     return (
         <WrapperNav>
             <Container>
                 <NavigationBlock>
-                    <List>
-                        {arrayItemLink.map(item => <ItemLink key={item.name} {...item}/>)}
+                    <Burger burger={burger} closeOpen={closeOpen}/>
+                    <List openMenu={burger ? 'openMenu' : null}>
+                        {arrayItemLink.map(item => <ItemLink key={item.name} {...item} close={close}/>)}
                     </List>
                 </NavigationBlock>
             </Container>

@@ -1,7 +1,7 @@
 import {Facebook, GitHub, Laptop, Linkedin, Shield, Telegram, Twitter, User, UserGraduate} from "./Font Awesome/Solid";
-import first from "../images/weather_aplication.png";
-import second from "../images/hex_aplication.jpg";
-import third from "../images/math_aplication.jpg";
+import weather from "../images/weather.png";
+import hex from "../images/hex.jpg";
+import math from "../images/math.jpg";
 
 export const rightSkillsArray = [
     {text: 'Communication', width: '70%'},
@@ -91,7 +91,7 @@ export const experiences = [
     {
         id: 1,
         title: '2016 \n General Education',
-        text: 'Dnipropetrovsk College',
+        text: 'Dnepropetrovsk College',
         percent: 98
 
     },
@@ -112,7 +112,7 @@ export const experiences = [
 ]
 
 export const arrayWebsitesObj = [
-    {name: 'weather', href: first,},
-    {name: 'hex_color', href: second,},
-    {name: 'hi_aducation', href: third,}
+    {name: 'weather', blank: '_blank', theme: weather, href: '#'},
+    {name: 'hex_color', blank: '_blank', theme: hex, href: '#'},
+    {name: 'hi_education', blank: '_blank', theme: math, href: '#'}
 ]

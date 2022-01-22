@@ -1,12 +1,11 @@
 import React from 'react';
 import {
-    BlockSite,
-    InformTextPortfolio, LinkForSite, MainBlockForSite,
-    SectionPortfolio, TextForSite,
+    InformTextPortfolio, MainBlockForSite,
+    SectionPortfolio,
 } from "../../styled_components/Portfolio/Portfolio_styles";
 import {Container} from "../../styled_components/Universal_styles";
-import {Search} from "../../utils/Font Awesome/Solid";
 import {arrayWebsitesObj} from "../../utils/someArrayObj";
+import WebSite from "./WebSite";
 
 
 
@@ -21,12 +20,7 @@ const Portfolio = () => {
                 </InformTextPortfolio>
 
                 <MainBlockForSite>
-                    {arrayWebsitesObj.map(link =>
-                        <BlockSite key={link.name} background={link.href}>
-                            <TextForSite>{link.name}</TextForSite>
-                            <LinkForSite href={'#'} target={'_blank'}>{Search}</LinkForSite>
-                        </BlockSite>
-                    )}
+                    {arrayWebsitesObj.map(link => <WebSite key={link.name} {...link}/>)}
                 </MainBlockForSite>
             </Container>
         </SectionPortfolio>

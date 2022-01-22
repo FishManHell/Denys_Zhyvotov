@@ -30,3 +30,11 @@ html, body {
     dominant-baseline: middle;
     text-anchor: middle;
 }
+
+
+@media all and (max-width: 768px) {
+    #root {
+        position: relative;
+    }
+
+}

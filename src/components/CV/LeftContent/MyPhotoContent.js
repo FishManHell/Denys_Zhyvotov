@@ -1,6 +1,6 @@
 import React from 'react';
 import {BlockImage, Photo} from "../../../styled_components/Heading/LearnMore";
-import MyPhoto from "../../../images/123.jpg";
+import MyPhoto from "../../../images/photo.jpg";
 
 const MyPhotoContent = () => {
     return (

@@ -1,10 +1,17 @@
 import styled from "styled-components";
+import {device} from "../../utils/MediaSize";
 
 export const SectionAboutMe = styled.section`
   width: 100%;
   display: flex;
   align-items: center;
   padding: 100px 0;
+  
+  
+  @media all and ${device.mobileL} {
+    padding: 0 0 100px 0;
+  }
+  
 `
 
 export const WrapperInformation = styled.div`
