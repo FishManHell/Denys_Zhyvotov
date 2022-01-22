@@ -1,11 +1,8 @@
 import styled from "styled-components";
 
 export const SectionContact = styled.section`
-  //padding: 100px 0;
-  //background-color: #1B2A2C;
+  padding: 100px 0;
 `
-
-
 //InformationContact
 
 export const WrapperInformContact = styled.div`
@@ -13,14 +10,6 @@ export const WrapperInformContact = styled.div`
   font-size: 1.125rem;
   color: #848585;
   font-weight: 600;
-`
-
-export const TitleText = styled.h2`
-  color: #fff;
-  font-size: 1.875rem;
-  line-height: 1.5rem;
-  margin-bottom: 50px;
-
 `
 
 export const TextInform = styled.p`
@@ -34,7 +23,7 @@ export const BlockStreetInform = styled.div`
   margin-bottom: 50px;
 `
 
-export const MyStreetInfrom = styled.span`
+export const MyStreetInform = styled.span`
   font-size: 1.5rem;
   margin-bottom: 5px;
   color: #fff;

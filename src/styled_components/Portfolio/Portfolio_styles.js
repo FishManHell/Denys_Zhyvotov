@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const SectionPortfolio = styled.section`
   width: 100%;
-  //background-color: #F2F2F1;
-  //padding: 100px 0;
 `
 
 export const InformTextPortfolio = styled.p`

@@ -1,4 +1,4 @@
-import {Facebook, GitHub, Laptop, LinKedin, Shield, Telegram, Twitter, User, UserGraduate} from "./Font Awesome/Solid";
+import {Facebook, GitHub, Laptop, Linkedin, Shield, Telegram, Twitter, User, UserGraduate} from "./Font Awesome/Solid";
 import first from "../images/weather_aplication.png";
 import second from "../images/hex_aplication.jpg";
 import third from "../images/math_aplication.jpg";
@@ -41,7 +41,7 @@ export const experienceArray = [
 
 
 export const arrayItemLink = [
-    {link: '/home', name: 'home'},
+    {link: '/', name: 'home'},
     {link: '/vgn', name: 'vgn'},
     {link: '/resume', name: 'resume'},
     {link: '/sites', name: 'sites'},
@@ -50,7 +50,7 @@ export const arrayItemLink = [
 
 export const arrayFooterLink = [
     {name: 'Facebook', link: '#', icon: Facebook},
-    {name: 'LinKedin', link: 'https://www.linkedin.com/in/denys-zhyvotov-8683611b9/', icon: LinKedin},
+    {name: 'LinKedin', link: 'https://www.linkedin.com/in/denys-zhyvotov-8683611b9/', icon: Linkedin},
     {name: 'Twitter', link: '#', icon: Twitter},
     {name: 'Telegram', link: 'https://t.me/FishManhell', icon: Telegram},
     {name: 'GitHub', link: 'https://github.com/FishManHell', icon: GitHub}

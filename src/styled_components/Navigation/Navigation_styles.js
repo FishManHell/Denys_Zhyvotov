@@ -11,19 +11,6 @@ export const NavigationBlock = styled.nav`
   align-items: center;
 `
 
-
-export const Logo = styled.div`
-  width: 70px;
-  border: 1px solid #00C667;
-  padding: 5px;
-  border-radius: 10px;
-`
-
-export const Image = styled.img`
-  width: 100%;
-  height: 100%;
-`
-
 export const List = styled.ul`
   display: flex;
   list-style: none;
@@ -31,10 +18,17 @@ export const List = styled.ul`
   line-height: 1.875rem;
   cursor: pointer;
 
+  .active {
+    color: #00C667;
+    transform: scale(1.1);
+  }
+    
+
   a {
     margin-right: 50px;
     color: #fff;
     font-weight: 600;
+    text-decoration: none;
 
     &:hover {
       color: #00C667;

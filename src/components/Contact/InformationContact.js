@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     BlockContact,
-    BlockStreetInform, MyContact, MyStreetInfrom,
+    BlockStreetInform, MyContact, MyStreetInform,
     TextInform, TitleContact,
     WrapperInformContact
 } from "../../styled_components/Contact/ContactComponentStyles";
@@ -14,9 +14,9 @@ const InformationContact = () => {
                 vel vero! Consequatur itaque placeat quibusdam?
             </TextInform>
             <BlockStreetInform>
-                <MyStreetInfrom>122 33rd</MyStreetInfrom>
-                <MyStreetInfrom>Tel-Aviv Yafo</MyStreetInfrom>
-                <MyStreetInfrom>22 22 22</MyStreetInfrom>
+                <MyStreetInform>122 33rd</MyStreetInform>
+                <MyStreetInform>Tel-Aviv Yafo</MyStreetInform>
+                <MyStreetInform>22 22 22</MyStreetInform>
             </BlockStreetInform>
             <BlockContact>
                 <TitleContact>Email: <MyContact>leonard66693@gmail.com</MyContact></TitleContact>

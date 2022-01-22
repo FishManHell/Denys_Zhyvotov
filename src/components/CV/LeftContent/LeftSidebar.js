@@ -8,7 +8,7 @@ import {
     Position, SimpleText, TitleBlock, TitleIcon, TitleText
 } from "../../../styled_components/Heading/LearnMore";
 
-import {AddressCard, At, GitHub, LinKedin, PaperPlane, UserCircle, Users} from "../../../utils/Font Awesome/Solid";
+import {AddressCard, At, GitHub, Linkedin, PaperPlane, UserCircle, Users} from "../../../utils/Font Awesome/Solid";
 import MyPhotoContent from "./MyPhotoContent";
 
 const LeftSidebar = () => {
@@ -77,7 +77,7 @@ const LeftSidebar = () => {
                         <IconTextLink>GitHub</IconTextLink>
                     </ItemLink>
                     <ItemLink href={'#'}>
-                        <IconTextLink>{LinKedin}</IconTextLink>
+                        <IconTextLink>{Linkedin}</IconTextLink>
                         <IconTextLink>LinkedIn</IconTextLink>
                     </ItemLink>
                 </MiniBlockConnect>
