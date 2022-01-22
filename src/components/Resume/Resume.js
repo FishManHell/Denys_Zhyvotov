@@ -15,7 +15,7 @@ const Resume = () => {
                 <WrapperResume>
                     <LearnMore/>
                     <BlockButtonResume>
-                        <DownloadButton href={resume} download>download resume</DownloadButton>
+                        <DownloadButton href={resume}>download resume</DownloadButton>
                     </BlockButtonResume>
                 </WrapperResume>
             </Container>

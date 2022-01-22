@@ -3,15 +3,13 @@ import styled from "styled-components";
 
 export const SectionVGH = styled.section`
   width: 100%;
-  //background-color: #fff;
-  //padding: 100px 0;
+  padding: 100px 0;
 `
 
 
 export const WrapperVGN = styled.div`
   display: flex;
   justify-content: space-between;
-  //align-items: center;
   text-align: center;
 `
 

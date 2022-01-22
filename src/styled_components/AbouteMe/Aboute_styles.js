@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const SectionAboutMe = styled.section`
   width: 100%;
-  //background-color: #F2F2F1;
   display: flex;
   align-items: center;
+  padding: 100px 0;
 `
 
 export const WrapperInformation = styled.div`
@@ -24,16 +24,17 @@ export const MiniBlock = styled.div`
   margin-bottom: 10px;
   border-radius: 20px;
   background-color: #FDF5E6;
-  
+
   &:hover {
     cursor: pointer;
     transition: all 0.4s linear;
     border: 3px solid #00CD6B;
+
     span {
       color: #282828;
     }
   }
-  
+
 `
 
 export const Icon = styled.span`
