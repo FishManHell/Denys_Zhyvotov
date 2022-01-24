@@ -45,14 +45,6 @@ export const BlockForBurgerMenu = styled.div`
         transform: scale(0);
       }
     `}
-    @media all and ${device.mobile} {
-      width: 25px;
-
-      &:before, :after {
-        background-color: #fff;
-      }
-    }
-
   }
 
 `
@@ -67,9 +59,5 @@ export const LineForBurgerMenu = styled.span`
     top: 9px;
     z-index: 1;
     transition: all 0.3s ease 0s;
-  }
-
-  @media all and ${device.mobile} {
-    background-color: #fff;
   }
 `

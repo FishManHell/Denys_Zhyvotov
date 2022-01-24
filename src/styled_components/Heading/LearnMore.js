@@ -7,7 +7,7 @@ export const WrapperInformation = styled.main`
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgb(229 9 105 / 100%);
+  box-shadow: 0 0 20px rgb(229 9 105 / 100%);
   background-color: #fff;
   
   @media all and ${device.laptop} {

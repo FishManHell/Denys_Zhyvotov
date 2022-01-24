@@ -26,7 +26,7 @@ export const MainBlockWithMiniBlock = styled.div`
 
 export const MiniBlock = styled.div`
   width: 400px;
-  border: 3px solid #282828;
+  border: 3px solid #A00711;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 20px;

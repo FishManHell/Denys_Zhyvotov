@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {device} from "../../utils/MediaSize";
 
 export const SectionPortfolio = styled.section`
   width: 100%;
@@ -34,7 +35,7 @@ export const BlockSite = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+
   :hover {
     :before {
       content: '';
@@ -45,6 +46,7 @@ export const BlockSite = styled.div`
       background: #00A65E;
       opacity: 0.8;
     }
+
     a {
       position: absolute;
       display: flex;
@@ -57,15 +59,10 @@ export const BlockSite = styled.div`
       color: #fff;
     }
   }
-`
 
-export const TextForSite = styled.span`
-  padding-top: 20px;
-  color: #282828;
-  font-size: 2rem;
-  line-height: 1.875rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  @media all and ${device.tabletL} {
+    margin-right: 0;
+  }
 `
 
 export const LinkForSite = styled.a`

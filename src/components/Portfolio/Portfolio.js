@@ -8,7 +8,6 @@ import {arrayWebsitesObj} from "../../utils/someArrayObj";
 import WebSite from "./WebSite";
 
 
-
 const Portfolio = () => {
 
     return (

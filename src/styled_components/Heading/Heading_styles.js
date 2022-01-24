@@ -13,6 +13,8 @@ export const WrapperHeading = styled.section`
 
 export const BlockHeadingText = styled.div`
   text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 5px solid #fff;
 `
 
 export const HeadingText = styled.h1`

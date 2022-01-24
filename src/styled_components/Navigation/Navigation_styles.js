@@ -3,7 +3,8 @@ import {device} from "../../utils/MediaSize";
 
 export const WrapperNav = styled.section`
   padding: 20px 0;
-  background-color: #0E191B;
+  //background-color: #0E191B;
+  background-color: #002C3F;
 `
 
 export const NavigationBlock = styled.nav`
@@ -38,7 +39,7 @@ export const List = styled.ul`
       color: #00C667;
     }
   }
-  
+
   @media all and ${device.tablet} {
     position: absolute;
     flex-direction: column;
@@ -47,7 +48,7 @@ export const List = styled.ul`
     height: 100%;
     align-items: center;
     transition: all 0.7s;
-    
+
     &:before {
       content: '';
       position: absolute;
@@ -57,7 +58,7 @@ export const List = styled.ul`
       z-index: 1;
       opacity: 0.7;
     }
-    
+
     ${props => props.openMenu && css`
       top: 60px;
     `}
@@ -70,8 +71,8 @@ export const ItemNav = styled.li`
   margin-right: 50px;
   border: 1px solid #fff;
   border-radius: 10px;
-  
-  
+
+
   &:last-child {
     margin-right: 0;
   }
@@ -86,10 +87,12 @@ export const ItemNav = styled.li`
     a {
       font-size: 2rem;
     }
+
     .active {
       border-bottom: 3px solid #AB0E37;
-      
+
     }
+
     &:first-child {
       margin-top: 20px;
     }

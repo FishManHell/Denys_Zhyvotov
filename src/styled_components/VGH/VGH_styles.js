@@ -28,14 +28,15 @@ export const WrapperVGN = styled.div`
 export const WrapperItemVGN = styled.section`
   width: 400px;
   margin: 0 20px 0 0;
-  border: 5px solid #282828;
+  border: 3px solid #A00711;
   padding: 10px 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 30px #A9A9A9;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #A9A9A9;
+  background-color: #C9F8FE;
   
   &:hover {
     cursor: pointer;
-    border: 5px solid #FF7400;
+    border: 3px solid #FF7400;
     transition: all 0.3s linear;
     transform: scale(1.1);
   }
@@ -52,6 +53,7 @@ export const WrapperItemVGN = styled.section`
 export const SimpleTextVGN = styled.p`
   font-size: 1.125rem;
   line-height: 1.875rem;
-  font-weight: 400;
-  color: #00CD6B;
+  font-weight: 500;
+  //color: #00CD6B;
+  color: #000;
 `

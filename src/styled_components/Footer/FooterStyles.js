@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 
 export const FooterSection = styled.footer`
-  background-color: #0E191B;
+  //background-color: #0E191B;
+  background-color: #002C3F;
   padding: 50px 0;
 `
 

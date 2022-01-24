@@ -8,7 +8,7 @@ export const SectionContact = styled.section`
 export const WrapperInformContact = styled.div`
   text-align: center;
   font-size: 1.125rem;
-  color: #000;
+  color: #fff;
   font-weight: 600;
 `
 
@@ -46,6 +46,6 @@ export const TitleContact = styled.p`
 `
 
 export const MyContact = styled.span`
-  color: #000;
+  color: #fff;
   padding-top: 10px;
 `

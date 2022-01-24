@@ -17,7 +17,7 @@ export const BlockButtonResume = styled.div`
   border: 3px solid #00CF74;
   margin-top: 30px;
   &:hover {
-    border: 3px solid #282828;
+    border: 3px solid #fff;
     background-color: #00CD6B;
     transition: all linear 0.4s;
     a {
