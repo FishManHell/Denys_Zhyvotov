@@ -1,11 +1,10 @@
 import React from 'react';
 import {BlockImage, Photo} from "../../../styled_components/Heading/LearnMore";
-import MyPhoto from "../../../images/photo.jpg";
 
 const MyPhotoContent = () => {
     return (
         <BlockImage>
-            <Photo src={MyPhoto}/>
+            <Photo src={"https://i.ibb.co/tDdkS9t/photo.jpg"}/>
         </BlockImage>
     );
 };
