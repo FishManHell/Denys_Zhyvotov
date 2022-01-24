@@ -29,10 +29,9 @@ export const WrapperItemVGN = styled.section`
   width: 400px;
   margin: 0 20px 0 0;
   border: 3px solid #A00711;
-  padding: 10px 20px;
+  padding: 20px 20px;
   border-radius: 10px;
-  box-shadow: 0 0 15px #A9A9A9;
-  background-color: #C9F8FE;
+  background-color: #FDF5E6;
   
   &:hover {
     cursor: pointer;
