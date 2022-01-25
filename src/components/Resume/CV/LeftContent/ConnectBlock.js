@@ -1,5 +1,5 @@
 import React from 'react';
-import {IconTextLink, ItemLink, MiniBlockConnect} from "../../../styled_components/Heading/LearnMore";
+import {IconTextLink, ItemLink, MiniBlockConnect} from "../../../../styled_components/Heading/LearnMore";
 
 const ConnectBlock = ({href, target, linkIcon, nameIcon}) => {
     return (

@@ -8,7 +8,7 @@ import {arrayWebsitesObj} from "../../utils/someArrayObj";
 import WebSite from "./WebSite";
 
 
-const Portfolio = () => {
+const MyProjects = () => {
 
     return (
         <SectionPortfolio>
@@ -26,4 +26,4 @@ const Portfolio = () => {
     );
 };
 
-export default Portfolio;
+export default MyProjects;

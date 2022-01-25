@@ -3,9 +3,9 @@ import {
     BlockEducationInform, Education,
     Information,
     TitleInform
-} from "../../../styled_components/Heading/LearnMore";
+} from "../../../../styled_components/Heading/LearnMore";
 import CircleBar from "./CircleBar";
-import useHook from "../../../utils/CustomHook/useSkillBar";
+import useHook from "../../../../utils/CustomHook/useSkillBar";
 
 const EducationItem = ({text, title, percent}) => {
     const {width, percentNew} = useHook(percent);

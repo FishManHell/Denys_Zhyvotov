@@ -3,7 +3,7 @@ import {
     Facebook,
     GitHub,
     Laptop,
-    Linkedin, PaperPlane,
+    Linkedin, PaperPlane, Search,
     Shield,
     Telegram,
     Twitter,
@@ -11,6 +11,15 @@ import {
     UserCircle,
     UserGraduate, Users
 } from "./Font Awesome/Solid";
+import hexImage from '../images/hex_color.PNG'
+import weatherImage from '../images/weather.PNG'
+import mathImage from '../images/hi_ducation.PNG'
+
+export const objImg = {
+    hex: hexImage,
+    weather: weatherImage,
+    math: mathImage
+}
 
 export const objLinks = {
     facebook: '#',
@@ -120,17 +129,18 @@ export const education = [
 ]
 
 export const arrayWebsitesObj = [
-    {name: 'weather', blank: '_blank', theme: "https://i.ibb.co/nR3QMBr/weather.png", href: '#'},
-    {name: 'hex_color', blank: '_blank', theme: "https://i.ibb.co/nwH7gSN/hex-color.png", href: 'https://coloraplication.herokuapp.com/home'},
-    {name: 'hi_education', blank: '_blank', theme: "https://i.ibb.co/f2nZtzG/hi-ducation.png", href: 'https://himathgaming.herokuapp.com/'}
+    {name: 'weather', blank: '_blank', theme: "https://i.ibb.co/nR3QMBr/weather.png", href: '#', icon: Search},
+    {name: 'hex_color', blank: '_blank', theme: "https://i.ibb.co/nwH7gSN/hex-color.png", href: 'https://coloraplication.herokuapp.com/home', icon: Search},
+    {name: 'hi_education', blank: '_blank', theme: "https://i.ibb.co/f2nZtzG/hi-ducation.png", href: 'https://himathgaming.herokuapp.com/', icon: Search}
 ]
+
 
 
 export const arrayLeftSidebar = [
     {title: 'About', icon: UserCircle, simpleText: " Hi everyone! I'm 25 years old. I'm from Ukraine. Now I live in Israel. I have a good experience in front-end developing", check: false},
     {title: 'Contact', icon: AddressCard, simpleText: "Address: Tel-Aviv-Yafo\n Phone: (053) 220-12-30\n Email: denyszhyvotov@gmail.com", check: false},
     {title: 'References', icon: Users, simpleText: "Available upon request.", check: false},
-    {title: 'Interests', icon: PaperPlane, simpleText: " I'm interested in sport I run, go to the gym, go to the movies and hang out with my friends. I love learning new technologies", check: false},
+    {title: 'Interests', icon: PaperPlane, simpleText: " I'm interested in sport. I run every day, go to the gym, go to the movies and hang out with my friends. I love learning new technologies", check: false},
     {title: 'Connect', icon: At, itemLink: [{href: objLinks.gitHub, linkIcon: GitHub, nameIcon: 'GitHub', target: '_blank'}, {href: objLinks.linKedin, linkIcon: Linkedin, nameIcon: 'LinkedIn', target: '_blank'}], check: true}
 
 ]

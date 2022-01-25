@@ -1,7 +1,7 @@
 import React from 'react';
 import {CircularProgressbar} from "react-circular-progressbar";
-import {CircleItem} from "../../../styled_components/Heading/LearnMore";
-import {CircleStyles, stylesPortfolio} from "../../../utils/ObjectsStyle";
+import {CircleItem} from "../../../../styled_components/Heading/LearnMore";
+import {CircleStyles, stylesPortfolio} from "../../../../utils/ObjectsStyle";
 import 'react-circular-progressbar/dist/styles.css';
 
 

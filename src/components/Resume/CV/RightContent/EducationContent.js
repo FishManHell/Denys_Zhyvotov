@@ -1,17 +1,14 @@
 import React from 'react';
-import {
-    BlockEducation,
-    TitleRightBlock,
-    WrapperForEducation
-} from "../../../styled_components/Heading/LearnMore";
+import {BlockEducation, WrapperForEducation} from "../../../../styled_components/Heading/LearnMore";
 import EducationItem from "./EducationItem";
-import {education} from "../../../utils/someArrayObj";
+import {education} from "../../../../utils/someArrayObj";
+import TitleTextComponent from "./TitleTextComponent";
 
 const EducationContent = () => {
 
     return (
         <BlockEducation>
-            <TitleRightBlock>Education</TitleRightBlock>
+            <TitleTextComponent text={'Education:'}/>
             <WrapperForEducation>
                 {education.map(exp => <EducationItem key={exp.id} {...exp}/>)}
             </WrapperForEducation>

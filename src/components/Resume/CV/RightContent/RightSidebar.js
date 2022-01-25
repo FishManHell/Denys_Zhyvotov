@@ -1,5 +1,5 @@
 import React from 'react';
-import {RightSection} from "../../../styled_components/Heading/LearnMore";
+import {RightSection} from "../../../../styled_components/Heading/LearnMore";
 import SkillsContent from "./SkillsContent";
 import EducationContent from "./EducationContent";
 import ExperienceContent from "./ExperienceContent";

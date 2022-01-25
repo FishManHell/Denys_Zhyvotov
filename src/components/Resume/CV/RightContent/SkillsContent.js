@@ -3,16 +3,16 @@ import {
     LeftSkills,
     MainBlockSkills,
     RightSkills,
-    TitleRightBlock,
     WrapperForSkills
-} from "../../../styled_components/Heading/LearnMore";
-import {leftSkillsArray, rightSkillsArray} from "../../../utils/someArrayObj";
+} from "../../../../styled_components/Heading/LearnMore";
+import {leftSkillsArray, rightSkillsArray} from "../../../../utils/someArrayObj";
 import Skill from "./Skill";
+import TitleTextComponent from "./TitleTextComponent";
 
 const SkillsContent = () => {
     return (
         <MainBlockSkills>
-            <TitleRightBlock>Skills:</TitleRightBlock>
+            <TitleTextComponent text={'Skills:'}/>
             <WrapperForSkills>
                 <RightSkills>
                     {rightSkillsArray.map(skill => <Skill key={skill.text} {...skill}/>)}

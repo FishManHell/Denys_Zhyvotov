@@ -5,7 +5,7 @@ import {
     ItemElementInform,
     MainTextBlock,
     MainTextInform
-} from "../../../styled_components/Heading/LearnMore";
+} from "../../../../styled_components/Heading/LearnMore";
 
 const Experience = ({title, year, information}) => {
     return (
