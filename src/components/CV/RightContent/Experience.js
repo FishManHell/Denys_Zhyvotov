@@ -15,7 +15,7 @@ const Experience = ({title, year, information}) => {
                 <MainTextInform>{year}</MainTextInform>
             </MainTextBlock>
             <ElementInform>
-                {information.map((item, index) => <ItemElementInform key={index}>{item}</ItemElementInform>)}
+                {information.map((item, index) => <ItemElementInform key={year + index}>{item}</ItemElementInform>)}
             </ElementInform>
         </BlockInformExperience>
     );

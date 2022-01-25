@@ -5,7 +5,7 @@ import {
     WrapperForEducation
 } from "../../../styled_components/Heading/LearnMore";
 import EducationItem from "./EducationItem";
-import {experiences} from "../../../utils/someArrayObj";
+import {education} from "../../../utils/someArrayObj";
 
 const EducationContent = () => {
 
@@ -13,7 +13,7 @@ const EducationContent = () => {
         <BlockEducation>
             <TitleRightBlock>Education</TitleRightBlock>
             <WrapperForEducation>
-                {experiences.map(exp => <EducationItem key={exp.id} {...exp}/>)}
+                {education.map(exp => <EducationItem key={exp.id} {...exp}/>)}
             </WrapperForEducation>
         </BlockEducation>
     );

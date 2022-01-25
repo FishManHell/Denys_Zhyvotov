@@ -1,4 +1,24 @@
-import {Facebook, GitHub, Laptop, Linkedin, Shield, Telegram, Twitter, User, UserGraduate} from "./Font Awesome/Solid";
+import {
+    AddressCard, At,
+    Facebook,
+    GitHub,
+    Laptop,
+    Linkedin, PaperPlane,
+    Shield,
+    Telegram,
+    Twitter,
+    User,
+    UserCircle,
+    UserGraduate, Users
+} from "./Font Awesome/Solid";
+
+export const objLinks = {
+    facebook: '#',
+    linKedin: 'https://www.linkedin.com/in/denys-zhyvotov-8683611b9/',
+    twitter: '#',
+    telegram: 'https://t.me/FishManhell',
+    gitHub: 'https://github.com/FishManHell'
+}
 
 export const rightSkillsArray = [
     {text: 'Communication', width: '70%'},
@@ -36,21 +56,12 @@ export const experienceArray = [
 
 ]
 
-
-export const arrayItemLink = [
-    {link: '/', name: 'home'},
-    {link: '/vgn', name: 'vgn'},
-    {link: '/resume', name: 'resume'},
-    {link: '/sites', name: 'sites'},
-    {link: '/contact', name: 'contact'},
-]
-
 export const arrayFooterLink = [
-    {name: 'Facebook', link: '#', icon: Facebook},
-    {name: 'LinKedin', link: 'https://www.linkedin.com/in/denys-zhyvotov-8683611b9/', icon: Linkedin},
-    {name: 'Twitter', link: '#', icon: Twitter},
-    {name: 'Telegram', link: 'https://t.me/FishManhell', icon: Telegram},
-    {name: 'GitHub', link: 'https://github.com/FishManHell', icon: GitHub}
+    // {name: 'Facebook', link: objLinks.facebook, icon: Facebook},
+    {name: 'LinKedin', link: objLinks.linKedin, icon: Linkedin},
+    // {name: 'Twitter', link: objLinks.twitter, icon: Twitter},
+    {name: 'Telegram', link: objLinks.telegram, icon: Telegram},
+    {name: 'GitHub', link: objLinks.gitHub, icon: GitHub}
 ]
 
 
@@ -84,7 +95,7 @@ export const arrayInformItem = [
     },
 ]
 
-export const experiences = [
+export const education = [
     {
         id: 1,
         title: '2016 \n General Education',
@@ -96,14 +107,14 @@ export const experiences = [
         id: 2,
         title: '2018 \n IT School (Hillel)',
         text: 'Web developer',
-        percent: 75
+        percent: 90
 
     },
     {
         id: 3,
         title: '2020 \n Tel-Ran',
         text: 'Web developer',
-        percent: 90
+        percent: 98
 
     }
 ]
@@ -112,4 +123,14 @@ export const arrayWebsitesObj = [
     {name: 'weather', blank: '_blank', theme: "https://i.ibb.co/nR3QMBr/weather.png", href: '#'},
     {name: 'hex_color', blank: '_blank', theme: "https://i.ibb.co/nwH7gSN/hex-color.png", href: 'https://coloraplication.herokuapp.com/home'},
     {name: 'hi_education', blank: '_blank', theme: "https://i.ibb.co/f2nZtzG/hi-ducation.png", href: 'https://himathgaming.herokuapp.com/'}
+]
+
+
+export const arrayLeftSidebar = [
+    {title: 'About', icon: UserCircle, simpleText: " Hi everyone! I'm 25 years old. I'm from Ukraine. Now I live in Israel. I have a good experience in front-end developing", check: false},
+    {title: 'Contact', icon: AddressCard, simpleText: "Address: Tel-Aviv-Yafo\n Phone: (053) 220-12-30\n Email: denyszhyvotov@gmail.com", check: false},
+    {title: 'References', icon: Users, simpleText: "Available upon request.", check: false},
+    {title: 'Interests', icon: PaperPlane, simpleText: " I'm interested in sport I run, go to the gym, go to the movies and hang out with my friends. I love learning new technologies", check: false},
+    {title: 'Connect', icon: At, itemLink: [{href: objLinks.gitHub, linkIcon: GitHub, nameIcon: 'GitHub', target: '_blank'}, {href: objLinks.linKedin, linkIcon: Linkedin, nameIcon: 'LinkedIn', target: '_blank'}], check: true}
+
 ]

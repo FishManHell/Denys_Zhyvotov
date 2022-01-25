@@ -116,6 +116,8 @@ export const SimpleText = styled.p`
   margin-bottom: 1rem;
   font-weight: 300;
   font-size: 0.9rem;
+  white-space: pre-line;
+  line-height: 1.2rem;
 `
 
 export const Line = styled.hr`

@@ -13,3 +13,12 @@ export const RoutePage = [
     {path: 'contact', element: <ContactComponent/>},
     {path: '*', element: <Navigate to={'/'}/>}
 ]
+
+
+export const arrayItemLink = [
+    {link: '/', name: 'home'},
+    {link: '/vgn', name: 'vgn'},
+    {link: '/resume', name: 'resume'},
+    {link: '/sites', name: 'sites'},
+    {link: '/contact', name: 'contact'},
+]
