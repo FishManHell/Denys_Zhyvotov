@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {ObjColors} from "../../utils/objColors";
 
 export const SectionResume = styled.section`
   padding: 0 0 100px 0;
@@ -14,14 +15,14 @@ export const WrapperResume = styled.div`
 export const BlockButtonResume = styled.div`
   width: 216px;
   height: 55px;
-  border: 3px solid #00CF74;
+  border: 3px solid ${ObjColors.green};
   margin-top: 30px;
   &:hover {
-    border: 3px solid #fff;
-    background-color: #00CD6B;
+    border: 3px solid ${ObjColors.standart_white};
+    background-color: ${ObjColors.green};
     transition: all linear 0.4s;
     a {
-      color: #282828;
+      color: ${ObjColors.middle_black};
     }
   }
 `
@@ -32,7 +33,7 @@ export const DownloadButton = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #00CF74;
+  color: ${ObjColors.green};
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;

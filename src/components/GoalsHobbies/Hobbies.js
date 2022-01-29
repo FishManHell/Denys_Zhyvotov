@@ -1,5 +1,5 @@
 import React from 'react';
-import {SimpleTextVGN, WrapperItemVGN} from "../../styled_components/VGH/VGH_styles";
+import {SimpleTextVGN, WrapperItemVGN} from "../../styled_components/GoalsHobbies/GoalsHobbies_styles";
 import {TitleText} from "../../styled_components/Universal_styles";
 
 const Hobbies = () => {
@@ -12,7 +12,7 @@ const Hobbies = () => {
                 My short term goal is to get a job in required company where
                 I can utilize my skills & improve my career path.
             </SimpleTextVGN>
-        {/*    придумать hobie для себя */}
+        {/* придумать hobie для себя  поискать в инете*/}
         </WrapperItemVGN>
     );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import {SimpleTextVGN, WrapperItemVGN} from "../../styled_components/VGH/VGH_styles";
+import {SimpleTextVGN, WrapperItemVGN} from "../../styled_components/GoalsHobbies/GoalsHobbies_styles";
 import {TitleText} from "../../styled_components/Universal_styles";
 
 const ShortGoals = () => {

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {device} from "../utils/MediaSize";
+import {ObjColors} from "../utils/objColors";
 
 export const Container = styled.div`
   width: 1920px;
@@ -8,7 +9,7 @@ export const Container = styled.div`
 `
 
 export const TitleText = styled.h2`
-  color: #000;
+  color: ${ObjColors.hard_black};
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 1.5rem;

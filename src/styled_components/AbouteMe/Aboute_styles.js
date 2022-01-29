@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import {device} from "../../utils/MediaSize";
+import {ObjColors} from "../../utils/objColors";
 
 export const SectionAboutMe = styled.section`
   width: 100%;
   display: flex;
   align-items: center;
   padding: 100px 0;
-  
   
   @media all and ${device.mobileL} {
     padding: 0 0 100px 0;
@@ -26,26 +26,25 @@ export const MainBlockWithMiniBlock = styled.div`
 
 export const MiniBlock = styled.div`
   width: 400px;
-  border: 3px solid #A00711;
+  border: 3px solid ${ObjColors.red};
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 20px;
-  background-color: #FDF5E6;
+  background-color: ${ObjColors.white};
 
   &:hover {
     cursor: pointer;
     transition: all 0.4s linear;
-    border: 3px solid #00CD6B;
+    border: 3px solid ${ObjColors.green};
 
     span {
-      color: #282828;
+      color: ${ObjColors.middle_black};
     }
   }
-
 `
 
 export const Icon = styled.span`
-  color: #00CD6B;
+  color: ${ObjColors.green};
   font-size: 3rem;
 `
 
@@ -54,5 +53,5 @@ export const InformationText = styled.p`
   margin-top: 20px;
   font-size: 1.1rem;
   font-weight: 500;
-  line-height: 1.875rem;
+  line-height: 1.5rem;
 `

@@ -2,10 +2,10 @@ import React from 'react';
 import ShortGoals from "./ShortGoals";
 import LongGoals from "./LongGoals";
 import Hobbies from "./Hobbies";
-import {SectionVGH, WrapperVGN} from "../../styled_components/VGH/VGH_styles";
+import {SectionVGH, WrapperVGN} from "../../styled_components/GoalsHobbies/GoalsHobbies_styles";
 import {Container} from "../../styled_components/Universal_styles";
 
-const VGH = () => {
+const Targets = () => {
     return (
         <SectionVGH>
             <Container>
@@ -19,4 +19,4 @@ const VGH = () => {
     );
 };
 
-export default VGH;
+export default Targets;

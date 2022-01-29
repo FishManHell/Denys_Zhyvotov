@@ -1,13 +1,8 @@
 import React from 'react';
 import {Container} from "../../styled_components/Universal_styles";
-import {
-    BlockButtonResume,
-    DownloadButton,
-    SectionResume,
-    WrapperResume
-} from "../../styled_components/Resume/Resume_styled";
-import resume from '../../utils/CV_Denys_Zh_Front-End Developer.docx'
+import {SectionResume, WrapperResume} from "../../styled_components/Resume/Resume_styled";
 import LearnMore from "./CV/LearnMore";
+import ButtonCV from "./ButtonCV";
 
 const Resume = () => {
     return (
@@ -15,9 +10,7 @@ const Resume = () => {
             <Container>
                 <WrapperResume>
                     <LearnMore/>
-                    <BlockButtonResume>
-                        <DownloadButton href={resume}>download resume</DownloadButton>
-                    </BlockButtonResume>
+                    <ButtonCV value={'download resume'}/>
                 </WrapperResume>
             </Container>
         </SectionResume>

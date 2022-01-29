@@ -1,0 +1,16 @@
+export const ObjColors = {
+    hard_black: '#000',
+    middle_black: '#282828',
+    easy_black: '#222',
+    white: '#FDF5E6',
+    middle_white: '#e5eaee',
+    standart_white: '#fff',
+    red: '#A00711',
+    orange: '#FF7400',
+    green: '#00CD6B',
+    dark_green: '#0E191B',
+    blue: '#002C3F',
+    birch: '#00dcc6',
+    pink: '#c60076',
+    grey: '#636c72',
+}

@@ -18,9 +18,7 @@ function App() {
         <WrapperApp>
             <Navigation burger={burger} close={handleCloseMenu} closeOpen={handleOpenCloseManu}/>
             <Heading/>
-            <Routes>
-                {RoutePage.map(page =>  <Route key={page.path} path={page.path} element={page.element}/>)}
-            </Routes>
+            <Routes>{RoutePage.map(page => <Route key={page.path} path={page.path} element={page.element}/>)}</Routes>
             <Footer/>
         </WrapperApp>
     );

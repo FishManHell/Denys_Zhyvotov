@@ -1,19 +1,20 @@
 import {device} from "../../utils/MediaSize";
 import styled, {css} from "styled-components";
-
+import {ObjColors} from "../../utils/objColors";
 
 export const BlockForBurgerMenu = styled.div`
   display: none;
 
   @media all and ${device.tablet} {
     display: block;
+    cursor: pointer;
     position: relative;
     width: 30px;
     height: 20px;
 
     &:before, :after {
       content: '';
-      background-color: #00C667;
+      background-color: ${ObjColors.green};
       position: absolute;
       width: 100%;
       height: 3px;
@@ -55,7 +56,7 @@ export const LineForBurgerMenu = styled.span`
     position: absolute;
     width: 100%;
     height: 3px;
-    background-color: #00C667;
+    background-color: ${ObjColors.green};
     top: 9px;
     z-index: 1;
     transition: all 0.3s ease 0s;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {device} from "../../utils/MediaSize";
+import {ObjColors} from "../../utils/objColors";
 
 export const WrapperInformation = styled.main`
   width: 1140px;
@@ -8,7 +9,7 @@ export const WrapperInformation = styled.main`
   justify-content: space-between;
   border-radius: 10px;
   box-shadow: 0 0 20px rgb(229 9 105 / 100%);
-  background-color: #fff;
+  background-color: ${ObjColors.standart_white};
   
   @media all and ${device.laptop} {
     width: 900px;
@@ -23,14 +24,12 @@ export const WrapperInformation = styled.main`
     width: 700px;
     flex-direction: column;
   }
-
 `
-
 
 export const LeftSection = styled.section`
   flex: 0 0 25%;
   max-width: 100%;
-  background-color: #222;
+  background-color: ${ObjColors.easy_black};
   font-weight: 300;
   padding: 2rem 1.5rem;
   border-top-left-radius: 10px;
@@ -42,7 +41,6 @@ export const LeftSection = styled.section`
   }
 `
 /// left Section
-
 
 export const BlockImage = styled.div`
   border-radius: 50%;
@@ -70,15 +68,14 @@ export const BlockNamePosition = styled.div`
 `
 
 export const FullName = styled.h3`
-  color: #00dcc6;
+  color: ${ObjColors.birch};
   font-weight: 400;
   font-size: 1.5rem;
-
 `
 
 export const Position = styled.h4`
   margin: 0.5rem 0;
-  color: #636c72;
+  color: ${ObjColors.grey};
   font-size: 1.1rem;
 `
 
@@ -87,7 +84,6 @@ export const BlockAboutMe = styled.div`
   @media all and ${device.tabletS} {
     text-align: center;
   }
-
 `
 
 export const TitleBlock = styled.div`
@@ -100,19 +96,19 @@ export const TitleBlock = styled.div`
 `
 
 export const TitleIcon = styled.span`
-  color: #00dcc6;
+  color: ${ObjColors.birch};
   font-size: 1.2rem;
   margin-right: 5px;
 `
 
 export const TitleText = styled.h4`
-  color: #00dcc6;
+  color: ${ObjColors.birch};
   font-size: 1.2rem;
   font-weight: 500;
 `
 
 export const SimpleText = styled.p`
-  color: #636c72;
+  color: ${ObjColors.grey};
   margin-bottom: 1rem;
   font-weight: 300;
   font-size: 0.9rem;
@@ -121,7 +117,7 @@ export const SimpleText = styled.p`
 `
 
 export const Line = styled.hr`
-  background-color: #00dcc6;
+  background-color: ${ObjColors.birch};
   width: 60%;
   border: none;
   border-top: 1px solid rgba(0, 0, 0, .1);
@@ -132,45 +128,25 @@ export const Line = styled.hr`
   }
 `
 
-
-export const BlockContact = styled.div`
-
-`
-
-export const BlockAdPhEm = styled.div`
-  @media all and ${device.tabletS} {
-    text-align: center;
-  }
-`
-
-export const AdPhEm = styled.p`
-  color: #636c72;
-  margin-bottom: 5px;
-  font-weight: 300;
-  font-size: 0.9rem;
-`
-
-
 export const MiniBlockConnect = styled.div`
   display: flex;
   flex-direction: column;
 `
 
 export const ItemLink = styled.a`
-  color: #636c72;
+  color: ${ObjColors.grey};
   margin-bottom: 0.5rem;
   font-weight: 300;
   text-decoration: none;
 
   &:hover {
-    color: #fff;
+    color: ${ObjColors.standart_white};
   }
 `
 
 export const IconTextLink = styled.span`
   margin-left: 0.5rem;
 `
-
 
 export const RightSection = styled.section`
   width: 75%;
@@ -180,8 +156,6 @@ export const RightSection = styled.section`
   @media all and ${device.tablet} {
     width: 100%;
   }
-  
-  
 `
 
 export const MainBlockSkills = styled.div`
@@ -228,20 +202,19 @@ export const BlockSkills = styled.div`
 export const TitleBlockSkills = styled.h5`
   font-weight: 300;
   line-height: 1.5;
-  color: #222;
+  color: ${ObjColors.easy_black};
   margin-bottom: 0.5rem;
 
   @media all and ${device.tabletS} {
     text-align: center;
     font-weight: 500;
   }
-  
 `
 
 export const SkillBar = styled.div`
   max-width: 100%;
   height: 10px;
-  background-color: #e5eaee;
+  background-color:${ObjColors.middle_white};
   position: relative;
   border-radius: 5px;
 
@@ -250,16 +223,15 @@ export const SkillBar = styled.div`
     position: absolute;
     width: ${props => props.width};
     height: 100%;
-    background-color: #00dcc6;
+    background-color: ${ObjColors.birch};
     border-radius: inherit;
   }
 `
 
-
 export const BlockEducation = styled.div`
   padding: 1rem;
   margin-bottom: 1rem;
-  background-color: #e5eaee;
+  background-color:${ObjColors.middle_white};
   border-radius: 0.3rem;
 
 `
@@ -292,10 +264,9 @@ export const ElementInform = styled.ul`
 export const ItemElementInform = styled.li`
   font-weight: 200;
   line-height: 1.5;
-  color: #222;
+  color: ${ObjColors.easy_black};
   margin-bottom: 5px;
 `
-
 
 /// это skill bar - тут нужно указать правильней все
 
@@ -331,7 +302,6 @@ export const CircleItem = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  
 `
 
 export const BlockEducationInform = styled.div`
@@ -341,7 +311,6 @@ export const BlockEducationInform = styled.div`
     h5 {
       font-size: 1rem;
     }
-
     p {
       font-size: 0.9rem;
     }
@@ -352,7 +321,7 @@ export const TitleInform = styled.h5`
   margin: 0.5rem 0;
   font-size: 1.20rem;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.4rem;
   white-space: pre-line;
 `
 
@@ -366,7 +335,7 @@ export const TitleRightBlock = styled.h2`
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.1;
-  color: #c60076;
+  color: ${ObjColors.pink};
 
   @media all and ${device.tabletS} {
     text-align: center;

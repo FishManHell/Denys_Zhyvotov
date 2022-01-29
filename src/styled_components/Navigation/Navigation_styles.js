@@ -1,5 +1,6 @@
 import styled, {css} from "styled-components";
 import {device} from "../../utils/MediaSize";
+import {ObjColors} from "../../utils/objColors";
 
 export const WrapperNav = styled.section`
   padding: 20px 0;
@@ -21,7 +22,7 @@ export const List = styled.ul`
   cursor: pointer;
 
   .active {
-    color: #00C667;
+    color: ${ObjColors.green};
     transform: scale(1.1);
   }
 
@@ -30,13 +31,13 @@ export const List = styled.ul`
     text-align: center;
     width: 100%;
     height: 100%;
-    color: #fff;
+    color: ${ObjColors.standart_white};
     font-weight: 600;
     text-decoration: none;
     padding: 10px;
 
     &:hover {
-      color: #00C667;
+      color: ${ObjColors.green};
     }
   }
 
@@ -53,7 +54,7 @@ export const List = styled.ul`
       content: '';
       position: absolute;
       width: 100%;
-      background-color: black;
+      background-color: ${ObjColors.hard_black};
       height: 100%;
       z-index: 1;
       opacity: 0.7;
@@ -69,7 +70,7 @@ export const List = styled.ul`
 export const ItemNav = styled.li`
   width: 100px;
   margin-right: 50px;
-  border: 1px solid #fff;
+  border: 1px solid ${ObjColors.standart_white};
   border-radius: 10px;
 
 
@@ -89,7 +90,7 @@ export const ItemNav = styled.li`
     }
 
     .active {
-      border-bottom: 3px solid #AB0E37;
+      border-bottom: 3px solid ${ObjColors.red};
 
     }
 

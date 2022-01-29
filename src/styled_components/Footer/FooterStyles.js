@@ -1,16 +1,14 @@
 import styled from "styled-components";
-
+import {ObjColors} from "../../utils/objColors";
 
 export const FooterSection = styled.footer`
-  //background-color: #0E191B;
-  background-color: #002C3F;
+  background-color: ${ObjColors.blue};
   padding: 50px 0;
 `
 
-
 export const TextFooter = styled.p`
   text-align: center;
-  color: #fff;
+  color: ${ObjColors.standart_white};
   margin-bottom: 20px;
   text-transform: uppercase;
 `
@@ -29,15 +27,14 @@ export const BlockLink = styled.div`
   justify-content: center;
   align-items: center;
   margin-right: 10px;
-
 `
 
 export const Link = styled.a`
   font-size: 1.2rem;
-  color: #0E191B;
+  color: ${ObjColors.dark_green};
 
   &:hover {
     cursor: pointer;
-    color: #fff;
+    color: ${ObjColors.standart_white};
   }
 `

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {device} from "../../utils/MediaSize";
+import {ObjColors} from "../../utils/objColors";
 
 export const WrapperHeading = styled.section`
   width: 100%;
@@ -14,11 +15,11 @@ export const WrapperHeading = styled.section`
 export const BlockHeadingText = styled.div`
   text-align: center;
   padding-bottom: 20px;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid ${ObjColors.standart_white};
 `
 
 export const HeadingText = styled.h1`
-  color: #fff;
+  color: ${ObjColors.standart_white};
   font-size: 3.75rem;
   
   @media all and ${device.tablet} {
