@@ -9,10 +9,8 @@ const Hobbies = () => {
                 Hobbies
             </TitleText>
             <SimpleTextVGN>
-                My short term goal is to get a job in required company where
-                I can utilize my skills & improve my career path.
+                I travel, play sports, read, watch movies, series, listen to music, solve problems, I play board games
             </SimpleTextVGN>
-        {/* придумать hobie для себя  поискать в инете*/}
         </WrapperItemVGN>
     );
 };

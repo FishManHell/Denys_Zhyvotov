@@ -262,14 +262,11 @@ export const ElementInform = styled.ul`
 `
 
 export const ItemElementInform = styled.li`
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5;
   color: ${ObjColors.easy_black};
   margin-bottom: 5px;
 `
-
-/// это skill bar - тут нужно указать правильней все
-
 
 export const WrapperForEducation = styled.div`
   display: flex;

@@ -30,37 +30,36 @@ export const objLinks = {
 }
 
 export const rightSkillsArray = [
+    {text: 'Planning', width: '60%'},
+    {text: 'HTML/CSS', width: '90%'},
+    {text: 'JavaScript', width: '90%'},
+    {text: 'React/Redux', width: '95%'}
+]
+
+
+export const leftSkillsArray = [
     {text: 'Communication', width: '70%'},
     {text: 'Organization', width: '65%'},
     {text: 'Learning', width: '65%'},
     {text: 'Programming', width: '95%'}
 ]
 
-
-export const leftSkillsArray = [
-    {text: 'Planning', width: '60%'},
-    {text: 'HTML/CSS', width: '90%'},
-    {text: 'JavaScript', width: '90%'},
-    {text: 'React/Redux', width: '95%'}
-]
-//анализ проекта, общения с командой, тим лидо и дизайнером, разработка веб сайтой
-// анализ проекта, общения с командой, тим лидо и дизайнером, разработка веб сайтой, fix code, search information
-//активное участие в разроботке нескольких большых проектов
 export const experienceArray = [
     {
         id: 1, title: 'Frontend Developer', year: '2020 - Present',
         information: [
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-            'Illo odit totam, quaerat numquam dolor, praesentium perferendis sunt magnam.',
-            'consequuntur optio odio nam vitae, labore architecto magni et libero officiisculpa.'
+            "Project analysis, communication with the team, team lido and designer.",
+            "Website development, fix code, search information",
+            "Active participation in the development of several large projects.",
+            "Using only the latest technologies"
         ]
     },
     {
-        id: 2, title: 'Frontend Web Developer', year: '2018 - 2019',
+        id: 2, title: 'Frontend Developer', year: '2018 - 2019',
         information: [
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-            'Illo odit totam, quaerat numquam dolor, praesentium perferendis sunt magnam.',
-            'consequuntur optio odio nam vitae, labore architecto magni et libero officiisculpa.'
+            "Project analysis, communication with the team, team lido and designer, website development.",
+            "Active participation in the development of several large projects.",
+            "Using only the latest technologies"
         ]
     },
 
@@ -80,7 +79,7 @@ export const arrayInformItem = [
         name: 'User',
         icon: User,
         text: "Hi everyone!\n" +
-            "I\'m front-end developer from Ukraine.\n Now I live in Israel.\n" +
+            "I'm front-end developer from Ukraine.\n Now I live in Israel.\n" +
             "I have a good work experience in front-end developing."
     },
     {
@@ -150,7 +149,7 @@ export const arrayWebsitesObj = [
     },
     {
         name: 'hi_education',
-        title: 'HiEducation \napplication',
+        title: 'Hiducation \napplication',
         blank: '_blank',
         theme: "https://i.ibb.co/f2nZtzG/hi-ducation.png",
         href: 'https://himathgaming.herokuapp.com/',
@@ -178,7 +177,8 @@ export const arrayLeftSidebar = [
     },
     {
         title: 'Interests', icon: PaperPlane,
-        simpleText: "I visit sport gym twice a week. I run every day early in the morning. I like spend time with friends. I like to get new experience. I'm fond new technologies",
+        simpleText: "I visit sport gym twice a week. I run every day early in the morning. " +
+            "I like spend time with friends. I like to get new experience. I'm fond new technologies",
         check: false
     },
     {

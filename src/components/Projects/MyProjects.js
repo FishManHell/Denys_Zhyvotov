@@ -11,7 +11,6 @@ const MyProjects = () => {
             <Container>
                 <MainBlockForSite>
                     {arrayWebsitesObj.map(link => <WebSite key={link.name} {...link}/>)}
-                    {/*дописать названия приложений*/}
                 </MainBlockForSite>
             </Container>
         </SectionPortfolio>

@@ -1,9 +1,11 @@
+import {ObjColors} from "./objColors";
+
 export const CircleStyles = {
     path: {
         transform: "rotate(180deg)",
         transformOrigin: "center center",
         strokeLinecap: "butt",
-        stroke: '#00dcc6',
+        stroke:  ObjColors.birch,
     },
     trail: {
         strokeWidth: 0
@@ -12,7 +14,7 @@ export const CircleStyles = {
         fontSize: '1rem',
         fontWeight: 500,
         animation: "fadein 2s",
-        fill: '#222',
+        fill: ObjColors.easy_black,
     }
 }
 
